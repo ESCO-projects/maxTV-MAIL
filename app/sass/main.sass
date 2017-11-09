@@ -1,0 +1,69 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "base"
+@import "gradients-sect"
+@import "plugin_libs/_magnific_popup"
+@import "modal_form"
+@import "header-sect"
+@import "benefits-sect"
+@import "hurry-sect"
+@import "equipment-sect"
+@import "before-after-sect"
+@import "come-ease-sect"
+@import "world-company-sect"
+@import "time-sect"
+@import "video-sect"
+@import "footer-sect"
+@import "fixed-header-sect"
+@import "tarif_sect"
+@import "call_modal"
+@import "shadow-animate"
+@import "change-tarif"
+@import "quest"
+@import "unique-modal"
+@import "mod"
+@import "tech-mode"
+@import "../libs/animate.css/source/base"
+@import "../libs/animate.css/source/fading_entrances/fadeIn"
+@import "../libs/animate.css/source/fading_entrances/fadeInDown"
+@import "../libs/animate.css/source/fading_exits/fadeOutUp"
+@import "../libs/animate.css/source/fading_entrances/fadeInUp"
+@import "../libs/animate.css/source/attention_seekers/bounce"
+
+.callback
+  a
+    display: block
+    position: fixed
+    z-index: 99
+    height: 80px
+    width: 80px
+    border-radius: 50%
+    right: 5%
+    bottom: 20vh
+    background-size: 45px
+    transform: scale(0.8)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-image: url(../img/icons/fixed_phone.png)
+    background-color: #ffd936
+    box-shadow: 5px 10px 25px rgba(255, 217, 54, 0.5)
+    animation-name: sh_phone
+    animation-iteration-count: infinite
+    animation-timing-function: ease
+    animation-duration: 2s
+    @keyframes sh_phone
+      50%
+        transform: scale(1) rotate(7deg)
+        box-shadow: 5px 10px 45px rgba(255, 217, 54, 0.9)
+      100%
+        transform: scale(0.8)
+
+.trans
+	transform: translateY(-100px)
+
+.menu_in
+  display: block
+
+
+@import "media" // Всегда в конце

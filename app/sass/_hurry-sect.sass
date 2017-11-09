@@ -1,0 +1,236 @@
+.hurry
+  background-color: #333745
+  padding-top: 65px
+
+.counter_wrap
+  position: relative
+
+.par_ax
+  position: absolute
+  background: no-repeat 50% 50%
+  z-index: 9
+  animation-name: rotatepr
+  transition: all 0.3s linear
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  background-size: contain
+  cursor: pointer
+
+@keyframes rotatepr
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+.pr_01
+  left: 47%
+  bottom: 13%
+  width: 29px
+  height: 37px
+  background-image: url(../img/paralax/par_01.png)
+  animation-duration: 25s
+.pr_02
+  left: 30%
+  top: -5%
+  width: 49px
+  height: 58px
+  background-image: url(../img/paralax/par_06.png)
+  animation-duration: 20s
+.pr_03
+  right: 15%
+  top: -17%
+  width: 35px
+  height: 29px
+  background-image: url(../img/paralax/par_03.png)
+  animation-duration: 25s
+.pr_04
+  top: 40%
+  left: 15%
+  width: 86px
+  height: 83px
+  background-image: url(../img/paralax/par_04.png)
+  animation-duration: 20s
+.pr_05
+  right: 5%
+  top: 20%
+  width: 29px
+  height: 31px
+  background-image: url(../img/paralax/par_05.png)
+  animation-duration: 25s
+.pr_06
+  right: 17%
+  top: 40%
+  width: 49px
+  height: 58px
+  background-image: url(../img/paralax/par_06.png)
+  animation-duration: 20s
+.pr_07
+  left: 2%
+  bottom: -40%
+  width: 77px
+  height: 61px
+  background-image: url(../img/paralax/par_07.png)
+  animation-duration: 30s
+.pr_08
+  left: 7%
+  bottom: 25%
+  width: 29px
+  height: 37px
+  background-image: url(../img/paralax/par_01.png)
+  animation-duration: 20s
+.pr_09
+  right: 0
+  bottom: 25%
+  width: 77px
+  height: 61px
+  background-image: url(../img/paralax/par_07.png)
+  animation-duration: 25s
+.pr_10
+  left: 5%
+  top: -5%
+  width: 35px
+  height: 29px
+  background-image: url(../img/paralax/par_03.png)
+  animation-duration: 25s
+.pr_11
+  right: 25%
+  bottom: 5%
+  width: 86px
+  height: 83px
+  background-image: url(../img/paralax/par_04.png)
+  animation-duration: 30s
+.pr_12
+  left: 25%
+  bottom: -15%
+  width: 29px
+  height: 31px
+  background-image: url(../img/paralax/par_05.png)
+  animation-duration: 25s
+
+.counter
+  position: relative
+  .time_type
+    position: absolute
+    color: #fff
+    width: 440px
+    right: 0
+    top: 145px
+    li
+      display: inline-block
+      width: 32.3%
+      padding-left: 15px
+      text-align: center
+      &:first-child
+        margin-left: 0
+
+.cou_items
+  margin: 0
+  padding: 0
+  li
+    display: inline-block
+    width: 30%
+    text-align: center
+    &:first-child
+      padding-left: 20px
+    &:last-child
+      text-align: left
+      padding-left: 28px
+
+.time_go
+	letter-spacing: 1px
+	padding-top: 12px
+	float: right
+	width: 438px
+	height: 107px
+	margin-top: 33px
+	border-radius: 7px
+	border: 2px solid #736efe
+	font-size: 62px
+	color: #fff
+	text-transform: uppercase
+	font-family: $default-title
+	position: relative
+	box-shadow: inset 0px 0px 20px 5px rgba(115,110,254,0.2)
+
+.shadow
+  top: 0
+  position: absolute
+  width: 436px
+  height: 105px
+  left: 0
+  border-radius: 7px
+  box-shadow: 0px 0px 20px 5px rgba(115,110,254,0.2)
+  &::before,&::after
+    position: absolute
+    content: ''
+    top: 7px
+    width: 2px
+    height: 90px
+    background-image: url(../img/icons/couter_sep.png)
+  &::before
+    left: 148px
+  &::after
+    right: 148px
+
+.tv_img_hurry
+	float: right
+	transform: translateY(-40px)
+	img
+		display: block
+		max-width: 100%
+		transform: translateX(5px)
+
+.counter_text
+  width: 480px
+  min-height: 340px
+  padding-top: 10px
+  padding-right: 30px
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    top: -37px
+    right: 19px
+    width: 290px
+    height: 1px
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0))
+  &::before
+    position: absolute
+    content: ''
+    width: 298px
+    height: 345px
+    right: 18px
+    top: -37px
+    border-right: 1px solid rgba(255, 255, 255, 0.3)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+  p
+  	color: #fff
+  	font-size: 16px
+  	line-height: 1.35
+  	text-align: left
+  	font-family: $default-font-light
+  i
+    color: #FFD936
+    font-size: 18px
+
+.cont_btn
+  position: absolute
+  bottom: 5px
+  left: 0
+  display: block
+  height: 50px
+  width: 280px
+  padding-top: 15px
+  color: #fff
+  border-radius: 5px
+  font-size: 14px
+  text-transform: uppercase
+  text-align: center
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+  font-family: $default-font-medium
+  transition: all 0.5s ease
+  &:hover,&:focus,&:visited,&:active
+    color: #fff!important
+    outline: none
+
+

@@ -1,0 +1,315 @@
+.world
+  min-height: 740px
+  background-color: #eff3f6
+  position: relative
+  z-index: 0!important
+  &__waves
+    position: absolute
+    left: 11%
+    background-repeat: no-repeat
+    width: 100%
+    z-index: -1!important
+  .wave_01
+    top: 30px
+    background-image: url(../img/svg_elem/wave_01.svg)
+    max-width: 1333px
+    height: 386px
+    animation-name: wave_moove_1
+    animation-duration: 6s
+    animation-iteration-count: infinite
+    animation-timing-function: ease
+    @keyframes wave_moove_1
+      50%
+        transform: translateX(70px)
+      100%
+        transform: translateX(0)
+  .wave_02
+    top: 37px
+    background-image: url(../img/svg_elem/wave_02.svg)
+    max-width: 1173px
+    height: 99px
+    animation-name: wave_moove_2
+    animation-duration: 9s
+    animation-iteration-count: infinite
+    animation-timing-function: ease
+    @keyframes wave_moove_2
+      50%
+        transform: translateX(-70px)
+      100%
+        transform: translateX(0)
+  &__circle
+    position: absolute
+    background-size: contain
+    background-repeat: no-repeat
+    z-index: 2
+    transition: all 0.3s ease
+    transform: scale(0.7)
+    animation: circle_scale 12s linear 0s
+    animation-iteration-count: infinite
+    &__one
+      left: 9.7%
+      top: 105px
+      width: 193px
+      height: 193px
+      background-image: url(../img/svg_elem/elips_purple.svg)
+    &__two
+      width: 116px
+      height: 116px
+      left: 5%
+      bottom: 14%
+      border-radius: 100%
+      background-image: url(../img/svg_elem/elips_yellow.svg)
+      box-shadow: 6px 0px 16px 3px rgba(255, 205, 28, 0.2)
+      animation-delay: 3s
+    &__three
+      width: 350px
+      height: 350px
+      right: 4%
+      top: -8%
+      opacity: 0.5
+      background-image: url(../img/svg_elem/elips_blue.svg)
+      animation-delay: 6s
+  &__content
+    min-height: 740px
+    background: url(../img/svg_elem/bg_blue.svg) no-repeat 50% 100%
+    padding-top: 70px
+    text-align: center
+    overflow: hidden
+  &__title
+    max-width: 550px
+    height: auto
+    margin: 17px auto 0
+    padding-bottom: 15px
+    position: relative
+    h3
+      text-shadow: 0px 6px 5.46px rgba(0, 0, 0, 0.16)
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        bottom: -20px
+        left: calc(50% - 25px)
+        width: 90px
+        height: 15px
+        opacity: 0.5
+        background-size: contain
+        background: url(../img/svg_elem/mini_wave.svg) no-repeat
+        transition: all 0.3s linear
+
+    p
+      font-family: $default-font-light
+      font-size: 20px
+      line-height: 1.2
+      color: #fff
+      margin-top: 25px
+      .kirat
+        background-color: #ffdf23
+        color: #000
+        padding: 0 4px 4px
+
+@keyframes circle_scale
+  0%
+    transform: scale(0.7)
+  50%
+    transform: scale(1)
+  100%
+    transform: scale(0.7)
+
+.office
+  margin-top: 2px
+  &__text
+    position: absolute
+    top: 45%
+    right: -130%
+    width: 100%
+    color: #fff
+    text-align: left
+    font-family: $default-font-medium
+    font-size: 16px
+    opacity: 0.3
+    transition: all 0.3s ease
+  &__item
+    position: relative
+    cursor: pointer
+    margin: 0 auto 23px
+    &:hover
+      .office__text
+        opacity: 1
+      .office__object
+        opacity: 1
+        transform: translateY(-4px)
+      .office__shadow
+        transform: translateY(3px)
+  &__object
+    opacity: 0.3
+    position: relative
+    z-index: 10
+    transition: all 0.3s ease
+    background-repeat: no-repeat
+  &__shadow
+    position: absolute
+    left: 0
+    top: 10px
+    opacity: 0.1
+    filter: blur(1px)
+    background-repeat: no-repeat
+    transition: all 0.3s ease
+  &__one
+    width: 93px
+    height: 92px
+    .office__object
+      width: 93px
+      height: 92px
+      background-image: url(../img/svg_elem/office_ico.svg)
+    .office__shadow
+      width: 93px
+      height: 92px
+      background-image: url(../img/svg_elem/office_ico_shadow.svg)
+  &__two
+    width: 83px
+    height: 89px
+    .office__object
+      width: 83px
+      height: 89px
+      background-image: url(../img/svg_elem/call_ico.svg)
+    .office__shadow
+      width: 83px
+      height: 89px
+      background-image: url(../img/svg_elem/call_ico_shadow.svg)
+  &__three
+    width: 76px
+    height: 89px
+    .office__object
+      width: 76px
+      height: 89px
+      background-image: url(../img/svg_elem/security.svg)
+    .office__shadow
+      width: 76px
+      height: 89px
+      background-image: url(../img/svg_elem/security_shadow.svg)
+
+
+.wrap_title
+  position: relative
+  height: auto
+
+.world
+  &__imagery
+    width: 100%
+    margin: 10px auto 0
+    max-width: 537px
+    height: 334px
+    background: url(../img/world_tv_forma.png) no-repeat
+    background-size: contain
+    padding: 14px 14px 86px
+  &__img_wrap
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 5px
+    &::after
+      position: absolute
+      content: ''
+      width: 151px
+      height: 131px
+      right: -66px
+      top: -58px
+      background-image: url(../img/garanti.png)
+      z-index: 99
+      background-size: cover
+  &__img_slider
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 6px
+    z-index: 1
+    opacity: 1
+    transform: scale(1)
+    transition: all 0.2s ease
+  &__slides
+    width: 100%
+    height: 234px
+    background-size: cover
+    border-radius: 6px
+  &__slide_01
+    background-image: url(../img/maxtv_oficce.jpg)
+  &__slide_02
+    background: url(../img/call_center.jpg) center center
+  &__slide_03
+    background-image: url(../img/security.jpg)
+  &__img_arr
+    position: absolute
+    width: 1px
+    height: 1px
+    background-color: rgba(239, 243, 246, 0.5)
+    z-index: 6
+    transform: translateX(-20px)
+    left: -45px
+    opacity: 0
+    transition: transform 0.3s ease
+    &::after
+      position: absolute
+      content: ''
+      right: -2px
+      top: -4px
+      background-color: #1254cb
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      border: 2px solid #ffe425
+      opacity: 0
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 5
+    opacity: 0
+    border-radius: 6px
+    transition: 0.3s
+    transform: scale(0)
+    background-size: cover
+    background-repeat: no-repeat
+  .img_office
+    background-image: url(../img/maxtv_oficce.jpg)
+  .img_call
+    background: url(../img/call_center.jpg) center center
+  .img_doc
+    background-image: url(../img/security.jpg)
+
+.scale_world
+  opacity: 1
+  transform: scale(1)
+
+.scale_slider
+  opacity: 0
+  transform: scale(0)
+
+.hov_img_arr_1
+  top: 27px
+  width: 65px
+  opacity: 1
+  transform: translateX(0px)
+  &::after
+    opacity: 1
+
+.hov_img_arr_2
+  top: 90px
+  width: 65px
+  opacity: 1
+  transform: translateX(0px)
+  &::after
+    opacity: 1
+
+.hov_img_arr_3
+  top: 202px
+  width: 65px
+  opacity: 1
+  transform: translateX(0px)
+  &::after
+    opacity: 1
+
+

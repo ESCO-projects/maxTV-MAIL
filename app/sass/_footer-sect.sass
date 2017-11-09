@@ -1,0 +1,104 @@
+.footer
+  min-height: 645px
+  background-color: #eff3f6
+  position: relative
+  clear: both
+  &__contacts_wrap
+    position: relative
+    height: 100%
+  &__copyrate
+    position: absolute
+    width: 100%
+    height: 20px
+    bottom: -50px
+    left: -20px
+    color: #fff
+    text-shadow: 0 1px 2px #000
+    white-space: nowrap
+    font-size: 15px
+  &__contacts
+    position: absolute
+    top: -65px
+    left: calc(50% + 22px)
+    width: 400px
+    min-height: 250px
+    background-color: #1d68f5
+    border-radius: 10px
+    box-shadow: 0 10px 37.72px 8.28px rgba(29, 104, 245, 0.5)
+    padding: 0 60px 30px
+    z-index: 9
+    h5
+      text-align: center
+      padding-right: 20px
+      font-size: 46px
+      color: #1d68f5
+      text-transform: uppercase
+      margin: -48px auto 33px
+      font-family: $default-title
+  &__item-cont
+    margin-bottom: 18px
+    &:last-child
+      margin-bottom: 0
+    span
+      color: #98b8f5
+      font-size: 18px
+      font-family: $default-font-bold
+  &__link
+    display: block
+    font-size: 20px
+    line-height: 1.3
+    color: #fff
+    font-family: $default-font-medium
+    &:hover
+      color: #fff
+  &__button
+    height: 54px
+    a
+      padding-top: 14px
+      display: block
+      height: 100%
+      text-align: center
+      font-size: 14px
+      color: #fff
+      text-transform: uppercase
+      font-family: $default-font-medium
+      border: 2px solid #fff
+      border-radius: 6px
+      background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0))
+      box-shadow: inset 0 0 25px 0 rgba(221, 255, 102, 0.3)
+      transition: all 0.3s ease
+      &:hover
+        color: #000
+        background: #fff
+        border: 1px solid transparent
+        box-shadow: inset 0 0 25px 0 rgba(29, 104, 245, 0.5)
+
+.map_wrapper
+  width: 100%
+  height: auto
+  margin: 0 auto
+  position: relative
+.blurel
+  position: absolute
+  filter: blur(10px)
+  z-index: 3
+  background-color: #EFF3F6
+.blur_01
+  left: -20px
+  top: 10px
+  height: 100%
+  width: 50px
+.blur_02
+  width: 100%
+  height: 50px
+  bottom: -20px
+  left: 0
+.blur_04
+  right: -20px
+  height: 100%
+  width: 50px
+  top: 10px
+
+.gmaps
+  width: 100%
+  height: 600px

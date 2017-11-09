@@ -1,0 +1,1080 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+  .md_wrap
+    .world__circle__three
+      width: 200px
+      height: 200px
+    .world__circle__one
+      width: 150px
+      height: 150px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .md_wrap
+    .second
+      p
+        width: 260px
+        left: calc(-100% - 200px)!important
+    //**********************************
+    .box_tv_img
+      width: 300px
+      height: 390px
+    .under_cap
+      width: 390px
+      height: 359px
+    .up_cap
+      width: 308px
+      height: 325px
+      top: 35px
+      left: -14px
+    .wave_01
+      left: 0
+      top: 20px
+    .wave_02
+      display: none
+    //*********************************
+    .come__grid
+      margin-top: 50px
+      svg
+        max-width: 825px
+        top: 70px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1040px)
+  .md_wrap
+    .world__circle__one,.world__circle__two,.world__circle__three
+      display: none
+    .wave_01
+      display: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .md_wrap
+    .md-title
+      padding-top: 23px
+    .head__logo
+      transform: translate(0)
+    .head__top
+      height: auto
+      padding-top: 0
+    .head__time,.head__phone,.head__phone-icon
+      display: none
+    .head__phone,.head__contacts
+      float: right
+    .head__phone
+      text-align: right
+      width: 140px
+      padding: 0
+    .head__feed
+      margin: 20px 0 0
+    .head__content
+      &::after,&:before
+        display: none
+    //********************************
+    .fix
+      &__content
+        padding-left: 15px
+        margin: 10px auto
+        max-width: 810px
+      &__btn
+        padding: 10px 5px 0
+    //*******************************
+    .benefit
+      padding-bottom: 60px
+      padding-top: 65px
+    .mr_l,.mr_r
+      margin: 0
+      transform: translate(0)
+    .fl_r,.fl_l
+      float: none
+    .muscle
+      text-align: center
+      min-height: 80px
+      width: 100%
+      margin: 30px auto
+      transform: translate(0)
+      padding: 0 0 50px
+      p
+        opacity: 1
+        left: -180px!important
+        top: 100px
+        width: 440px
+        text-align: center
+        padding: 0
+        br
+          display: none
+        &::after
+          display: none
+      .muscle__sub
+        text-align: center
+        br
+          display: none
+      &:hover
+        .muscle__circle
+          p
+            opacity: 1
+            transform: translateX(0)
+    .muscle__sub
+      left: 0
+      top: 100%
+    .muscle__circle
+      float: none
+      margin: 0 auto
+    //***************************************
+    .hurry
+      padding-bottom: 140px
+    .time_go,.tv_img_hurry,.counter
+      margin: 0 auto
+      text-align: center
+      float: none
+      transform: translate(0)
+      max-width: 438px
+    .time_go
+      margin-top: 30px
+    .tv_img_hurry
+      img
+        transform: translate(0)
+        margin: 0 auto
+    .time_type
+      top: 115px
+    .counter_text
+      min-height: 250px
+      margin: -25px auto
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+      padding: 50px 20px 0
+      p
+        text-align: center
+      .cont_btn
+        bottom: -24px
+        left: calc(50% - 140px)
+      &::after,&::before
+        width: 1px
+        height: 100%
+        top: 0
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0))
+      &::after
+        left: 0
+      &::before
+        border: none
+        right: 0
+    .pr_01
+      left: 17%
+    //****************************
+    .tariff_plans
+      margin-top: 0
+      &::before
+        top: -3px
+        left: -5px
+        width: 105%
+    .plans
+      max-width: 530px
+      padding-bottom: 70px
+      margin: 40px auto 0
+      transform: scale(1)
+      &__canals
+        float: none
+        clear: both
+        margin: 0
+        max-width: 100%
+      &__item
+        min-height: 370px
+      &__canals__list
+        margin-top: 25px
+        padding-top: 15px
+        li
+          margin: 0 40px
+    //*************************
+    .eq_slider,.box_tv_img
+      margin: 20px auto 0
+      float: none
+    //************************
+    .equipment
+      padding-top: 70px
+    .eq_text_wrap
+      margin: 10px auto 23px
+    //***********************
+    .before
+      padding-top: 150px
+    .tv_difference
+      padding: 0
+      max-width: 800px
+      min-height: 470px
+      background: url(../img/before_after_2.jpg) no-repeat 43% 50%
+    .tv_wrap
+      display: none
+    .ours
+      top: -140px
+      right: calc(50% - 260px)
+    .difference
+      width: 120px
+      border-radius: 6px
+      top: -75px!important
+      height: 60px
+      padding-top: 10px
+      &::before,&::after
+        top: 94px
+      &::before
+        right: 30px
+        transform: rotate(90deg)
+      &::after
+        left: 30px
+        transform: rotate(-90deg)
+    .competitor
+      left: calc(50% - 170px)
+    .ours
+      right: calc(50% - 160px)
+    .before__feed
+      margin: 0 50px
+      padding: 20px 40px
+    //*********************************
+    .time
+      &__tv
+        max-width: 552px
+        height: 360px
+      &__tv__inner
+        background-size: contain
+        h3
+          margin-top: 60px
+      &__text
+        padding: 15px 50px 45px
+    //********************************
+    .videos__slider
+      margin: 40px auto 380px
+    .videos__slide
+      margin: 0 auto
+    //*********************************
+    .footer__contacts
+      left: 50%
+    .time
+      padding-bottom: 250px
+    .gm-style
+      left: 200px!important
+    //*********************************
+    .feed_back,.cont_btn,a.pac_btn
+      &:hover
+        transform: translate(0)
+        transition: all 0s
+    .step_image
+      background-position: 50% -200px
+      p
+        opacity: 1
+        transform: translateY(0%)
+    //**************************************
+    .world__imagery
+      padding: 13px 13px 118px
+    .office__item
+      margin: 0 0 15px
+    .hov_img_arr_3
+      top: 175px
+    .world__img_wrap
+      &::after
+        width: 100px
+        height: 87px
+        right: -35px
+    .world__content
+      padding-top: 110px
+      padding-bottom: 70px
+    .world__slides
+      height: 203px
+    //**********************************
+    .come__button
+      transition: all 0.1s ease
+    .come__grid
+      margin: 100px 0
+      padding-top: 30px
+      background-size: cover
+      .glass
+        span
+          top: -130px
+          right: -35px
+          transform: rotate(-90deg)
+          height: 50px
+          padding-top: 15px
+        &::after
+          right: 43px
+          top: -50px
+          width: 1px
+          height: 25px
+          background-color: #e6e6e6
+          transition: all 0.2s ease1
+        &:hover
+          span
+            letter-spacing: 2px
+            transform: rotate(0deg) translateX(23px) translateY(20px)
+          &::after
+            transform: translateY(-10px)
+      svg
+        display: none
+      .square
+        margin: 200px auto 0
+        float: none!important
+        opacity: 1
+        p
+          font-size: 12px
+          br
+            display: none
+      .come__four
+        margin-left: -10px
+        margin-top: 175px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 900px)
+  .md_wrap
+    .footer__contacts
+      top: -130px
+    .world__content
+      background-size: 280%
+      padding: 150px 15px 160px
+    .world__img
+      width: 100%
+      max-width: 100%
+      left: 0
+  .mfp-content
+    .mod
+      width: 670px
+      &__first-step
+        label
+          margin: 0 auto 17px
+      &__calendar,&__place,&__provider
+        margin: 0 auto 32px
+      &__provider--title
+        text-align: center
+        width: 100%
+        padding-bottom: 10px
+        br
+          display: none
+      &__provider
+        padding-bottom: 0px
+      &__providers
+        margin: 0 auto
+        float: none
+        max-width: 496px
+      &__first-step
+        margin-bottom: 40px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px)
+  .md_wrap
+    .fix
+      &__content
+        border-radius: 0
+      &__nav-wrapper
+        display: none
+      &__phone
+        display: inline-block
+      &__mob-btn
+        display: block
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .md_wrap
+    .footer__contacts
+      left: 20px
+    .equipment
+      h3
+        font-size: 40px
+    .md-title
+      text-align: center
+      padding-bottom: 5px
+    .head__logo
+      width: 115px
+    .head__title
+      text-align: left
+    .head__logo,.head__title
+      float: none
+      display: inline-block
+    .head__feed,.head__contacts
+      float: none
+    .md-cont
+      text-align: right
+      border-top: 1px solid rgba(0, 0, 0, 0.1)
+      height: 56px
+    .head__feed
+      margin-top: 0
+      margin-right: 0
+      margin-left: 20px
+      margin-bottom: 10px
+      a
+        display: inline-block
+        margin: 0 15px
+    .mob_btn
+      display: block
+    //***********************************
+    .callback
+      a
+        width: 60px
+        height: 60px
+    //***********************
+    .tv_difference
+      padding: 0
+      max-width: 700px
+      min-height: 411px
+      background: url(../img/before_after_3.jpg) no-repeat 43% 50%
+    .before__feed
+      margin: 0 40px
+      padding: 20px
+    //**********************************
+    .quest
+      overflow-y: scroll
+      padding-bottom: 30px
+    .quest__title
+      h5
+        font-size: 22px
+    .quest__closer
+      top: -65px
+    .quest__text
+      margin: 0 auto
+      max-width: 100%
+      float: none
+      br
+        display: none
+      p
+        text-align: center
+    .quest__yellow-bg
+      white-space: nowrap
+      &::after
+        display: none
+    .quest__form
+      float: none
+      margin: 0 auto
+    //********************
+    .world__content
+      background-size: cover
+    .office__item
+      display: inline-block
+      margin: 0 40px 25px
+    .office__text
+      top: 110%
+      right: 0
+      text-align: center
+    .office__three
+      .office__text
+        right: 17px
+    .world__content
+      padding-bottom: 0
+    .world__imagery
+      margin: 10px auto 230px
+      padding: 14px 14px 86px
+    .world__img_arr
+      display: none
+    .world__img_wrap
+      &::after
+        width: 100px
+        height: 87px
+        right: calc(50% - 50px)
+        top: calc(100% - 43px)
+    .world__slides
+      height: 234px
+    //*********************
+    .pr_01,.pr_11
+      display: none
+    //**********************
+    .come__grid
+      background-image: none
+      padding-top: 80px
+      padding-bottom: 80px
+      .come__four
+        margin: 80px auto 0!important
+      .glass,.get_tv
+        &::after
+          display: none
+        span
+          display: none
+      .square
+        margin: 100px auto 0
+        p
+          font-size: 14px
+          br
+            display: none
+  .mfp-content
+    .mod
+      width: 460px
+      &__slider,&__step
+        max-width: 460px
+      &__dots
+        left: calc(50% - 71px)
+      &__btn
+        width: 190px
+      &__first-step
+        label
+         max-width: 360px
+      &__place,&__calendar
+        label
+          max-width: 360px
+          width: 100%
+          margin: 0 auto 17px
+          float: none
+      &__calendar
+        text-align: center
+        margin: 60px auto 50px
+        span
+          display: inline-block
+          width: 100%
+        input
+          float: none
+          margin: 0 auto
+      &__providers
+        max-width: 272px
+      &__pay_type,&__cart--one,&__cart--two
+        max-width: 360px
+        margin: 0 auto
+        padding: 0
+        label
+          width: 100%
+          margin: 0 0 10px
+      &__last-step
+        padding-bottom: 30px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 700px)
+  .mfp-content
+    .modal__closer.close_tech
+      right: 15px
+      top: 15px
+      background-color: transparent
+  .mod 
+    .modal__closer
+      &::before,&::after
+        background-color: #000
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px)
+  .md_wrap
+    .fix__phone
+      display: none
+    //**********************
+    h3
+      font-size: 40px
+    .head__form
+      h3
+        font-size: 26px
+    .equipment
+      h3
+        font-size: 32px
+    .plans
+      &__credit
+        margin: 30px auto 0
+      &__box
+        padding-top: 70px
+        &__list
+          li
+            &:first-child
+              text-align: center
+              span
+                display: none
+        &-img
+          top: 50px
+          left: calc(50% - 60px)
+      &__circle
+        margin: 30px auto 0
+        &::before
+          display: none
+      &__item
+        float: none
+        max-width: 320px
+        margin: 0 auto
+        min-height: auto
+      &__canals__list
+        li
+          display: block
+          margin: 0 40px
+    //**********************************
+    .box_tv_img
+      width: 250px
+      height: 290px
+    .under_cap
+      width: 300px
+      height: 276px
+    .up_cap
+      width: 235px
+      height: 250px
+      top: 26px
+      left: -10px
+    .before__feed
+      margin: 0 20px
+      padding: 20px 10px 50px
+    //********************************
+    .ours
+      right: calc(50% - 165px)
+    //*******************************
+    .time__tv
+      max-width: 380px
+      height: 430px
+      &::before,&::after
+        display: none
+      .time_go
+        background: #736EFE none
+      .shadow
+        width: 100%
+      h3
+        br
+          display: block
+    .time__wrap
+      position: relative
+    .bottom_count
+      position: absolute
+      left: -30px
+      top: 230px
+      .time_type
+        color: #000
+    .time__text
+      &::before
+        width: 100%
+      &::after
+        display: none
+    //******************************
+    .office__item
+      margin: 0 20px 25px
+    .world__imagery
+      width: 375px
+      height: 234px
+      padding: 11px 11px 62px
+    .world__slides
+      height: 161px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 540px)
+  .md_wrap
+    .head
+      min-height: 590px
+    .head__logo
+      display: none
+    .head__title
+      display: block
+    .head__feed
+      float: right
+    .mob_btn-def
+      left: 15px
+    .head__content
+      padding-top: 40px
+      padding-bottom: 80px
+      max-width: 100%
+      min-height: 480px
+      background-image: none!important
+    .top_shadow
+      display: none
+    .head__form
+      max-width: 100%
+      box-shadow: none
+      margin: 0 15px
+      padding: 0 10px 146px
+      h3
+        background-color: transparent
+        color: #000
+        font-size: 24px
+        transform: translate(0)
+        padding: 15px 0 0
+    .form_name,.form_phone,.send_form
+      width: 100%
+      button
+        width: 100%
+        border-radius: 0 0 4px 4px
+    .dt_mnu
+      a
+        margin: 35px 0
+    .form_name
+      border-radius: 0
+    .form_phone
+      border-left: none
+    .send_form
+      border-radius: 0 0 4px 4px
+    //****************************
+    .time_go
+      width: 400px
+    .shadow
+      width: 398px
+      &::before
+        left: 133px
+      &::after
+        right: 133px
+    .cou_items
+      li
+        &:last-child
+          padding-left: 15px
+    .time_type
+      width: 100%
+      li
+        padding-left: 0
+    .counter_text
+      max-width: 100%
+      width: 100%
+      padding: 50px 10px
+    //**************************
+    .informer
+      display: none
+    //*************************
+    .bottom_count
+      left: -11px
+    //************************
+    .world__content
+      h3
+        font-size: 37px
+    .world__title
+      p
+        br
+          display: none
+    .office
+      margin-top: 20px
+    //******************************************
+    .quest__title
+      h5
+        br
+          display: block
+    //**************************************
+    .come
+      p.yell
+        white-space: nowrap
+        padding: 7px 5px 10px
+        br
+          display: block
+      h3
+        font-size: 32px
+        &::before,&::after
+          top: -8px
+      &__grid
+        padding-top: 130px
+      &__center
+        top: 200px
+      &__center_content
+        margin: 0 15px
+        padding: 5px 25px 85px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .md_wrap
+    .tech
+      display: none!important
+    .head__form
+      p
+        br
+          display: none
+    //*********************
+    h3
+      font-size: 33px
+    .tariff_plans
+      h3
+        padding: 0 15px
+        font-size: 29px
+    //*********************
+    .muscle
+      p
+        width: 320px
+        left: -120px!important
+    //*********************
+    .time_go
+      width: 330px
+      height: 90px
+      font-size: 50px
+    .shadow
+      height: 100%
+      width: 100%
+      &::before
+        height: calc(100% - 13px)
+        left: 33%
+      &::after
+        height: calc(100% - 13px)
+        right: 33%
+    .time_type
+      top: 105px
+      width: 100%
+      li
+        padding-left: 0
+    //***********************************
+    .dots_slider
+      li
+        margin: 17px 21px
+    .eq_text_wrap
+      width: 280px
+    //***********************
+    .tv_difference
+      max-width: 469px
+      min-height: 294px
+      background: url(../img/before_after_4.jpg) no-repeat 49% 50%
+    .ours
+      right: calc(50% - 130px)
+    .competitor
+      left: calc(50% - 140px)
+    //*************************
+    .time__wrap
+      padding-top: 45px
+    .bottom_count
+      width: 100%
+      top: 190px
+      left: 0
+      .time_go
+        width: 100%
+        height: 80px
+        font-size: 44px
+    .time__tv
+      max-width: 290px
+      height: 370px
+      h3
+        margin-top: 52px
+    .time__text
+      padding: 15px 10px 45px
+    //********************************
+    .map_wrapper
+      width: 100%
+    .gm-style
+      left: 160px!important
+    .blur_04
+      right: -40px
+    .blur_01
+      left: -40px
+    .blur_02
+      bottom: -25px
+    .footer__contacts
+      width: 100%
+      max-width: 330px
+      margin: 0 auto
+      left: calc(50% - 165px)
+      padding: 0 15px 30px
+    //**********************
+    .quest__title
+      p
+        br
+          display: none
+    //*********************
+    .par_ax
+      display: none
+    //*********************
+    .world__content
+      background-position: 63% 50%
+      padding: 70px 10px 50px
+    .world__imagery
+      width: 278px
+      height: 234px
+      padding: 6px 6px 105px
+      margin: 10px auto 100px
+    .world__img_wrap
+      &::after
+        display: none
+    .office
+      &__item
+        margin: 0 14px 25px
+      &__text
+        font-size: 14px
+        text-align: center
+        width: 70px
+      &__object,&__shadow
+        background-size: contain
+      &__one
+        width: 60px
+        height: 70px
+        .office__object
+          width: 60px
+          height: 60px
+        .office__shadow
+          width: 60px
+          height: 60px
+      &__two
+        width: 60px
+        height: 70px
+        .office__object
+          width: 60px
+          height: 63px
+        .office__shadow
+          width: 60px
+          height: 63px
+      &__three
+        width: 55px
+        height: 70px
+        .office__object
+          width: 55px
+          height: 70px
+        .office__shadow
+          width: 55px
+          height: 70px
+        .office__text
+          right: 0
+    .world__slides
+      height: 123px
+    //************************
+    .come
+      h3
+        font-size: 22px
+        &::before,&::after
+          top: -15px
+      &__grid
+        padding-top: 180px
+      &__center_content
+        padding: 5px 10px 85px
+  //*************************
+  .mfp-content
+    .mod,.mod__slider,.mod__step
+      max-width: 300px
+      &__first-step
+        label
+          max-width: 220px
+      &__place,&__calendar
+        max-width: 220px
+      &__btn
+        margin: 0 auto 15px
+      &__footer
+        padding-top: 30px
+      &__pay_type,&__cart--one,&__cart--two
+        max-width: 260px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+  .md_wrap
+    .fix_tech
+      display: none
+    .dots_slider
+      li
+        margin: 17px 18px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px)
+  .md_wrap
+    .head__title
+      h1
+        a
+          &:nth-child(2)
+            font-size: 15px
+    .muscle
+      p
+        width: 290px
+        left: -105px!important
+    //**************************************
+    .counter_text
+      max-width: 280px
+      p
+        font-size: 15px
+      .cont_btn
+        width: 230px
+        left: calc(50% - 115px)
+    .time_go
+      width: 290px
+      height: 80px
+      font-size: 40px
+    .time_type
+      top: 95px
+    //*************************************
+    .plans
+      &__box__list
+        li
+          padding-left: 15px
+    //***********************************
+    .dots_slider
+      li
+        margin: 17px 14px
+    .box_tv_img
+      width: 230px
+      margin: 0 auto 30px
+    .before__feed
+      margin: 0 15px
+      padding: 20px 5px 50px
+      a.cont_btn
+        width: 230px
+        left: calc(50% - 115px)
+    //**********************
+    .quest__title
+      h5
+        font-size: 19px
+    .quest__title-cont
+      padding: 15px 15px 20px
+    //***************************
+    .footer__contacts
+      max-width: 290px
+      left: calc(50% - 145px)
+    //***********************
+    .come
+      &__grid
+        padding-top: 220px
+      p.subp
+        br
+          display: none
+  .techno__wrap
+    .techno__graph
+      font-size: 14px
+
+/*For set timeout modal START*/
+@media screen and (max-width: 1400px), screen and (max-height: 800px)
+  .md_wrap
+    .quest
+      &::after
+        left: 10%
+
+@media screen and (max-width: 1200px), screen and (max-height: 700px)
+  .md_wrap
+    .quest
+      &::after
+        left: 80%
+@media screen and (max-width: 991px), screen and (max-height: 600px)
+  .md_wrap
+    .quest
+      &::after
+        display: none
+/*For set timeout modal END*/
+
+/* IE 10 - 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .come__grid
+    svg
+      top: -35px
+  .js_anim_platform,.js_anim_shadow
+    animation: none
+  .provider
+    label
+      input
+        cursor: pointer!important
+        border: none!important
+  html,body
+    margin: 0
+    padding: 0
+  .md_wrap
+    .par_ax
+      transition: all 1s ease
+    .head__time
+      &::after
+        width: 200px
+    .tariff_plans
+      padding-top: 70px!important
+      h3
+        color: #333745!important
+        text-align: center
+        margin: 0 auto
+        display: block
+    .tariff_plans
+      margin-top: 0
+      &::before
+        display: none!important
+    .fix__feed-back
+      float: right
+    .fix__nav
+      a
+        display: inline-block
+        margin-right: 15px
+    .fix__btn
+      border-radius: 0 0 6px 0
+      padding: 10px 8px
+    .world__circle
+      transition: all 1s ease!important
+    .map_wrapper
+      width: 100%!important
+      margin: 0!important
+      padding: 0!important
+    .blurel
+      display: none!important
+
+/*EDGE 14+*/
+@supports (-ms-ime-align : auto) and (not (-ms-accelerator : true))
+  .md_wrap
+    .tariff_plans
+      h3
+        min-width: 100% !important
+        text-align: center!important
+        margin: 0 auto!important
+        display: inline-block!important
+		.js_anim_platform,.js_anim_shadow
+		  animation: none!important
+
+

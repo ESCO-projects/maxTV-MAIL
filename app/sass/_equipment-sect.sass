@@ -1,0 +1,257 @@
+.equipment
+	padding-top: 40px
+	height: auto
+	background: #eff3f6 url(../img/pattern_tv.png) repeat
+	h3
+		color: #656d89
+
+.eq_slider
+  text-align: center
+  max-width: 430px
+  float: right
+  margin-top: 60px
+  margin-right: 12px
+
+.slider_texts
+  padding-top: 210px
+
+.eq_text_wrap
+  background-color: #fff
+  width: 340px
+  margin: 10px auto 50px
+  border-radius: 6px
+  padding: 20px
+  box-shadow: 0px 9px 24.94px 4.06px rgba(0, 0, 0, 0.2)
+  position: relative
+  &::before
+    position: absolute
+    content: ''
+    width: 20px
+    height: 20px
+    background-color: #fff
+    border-radius: 50%
+    top: -10px
+    left: calc(50% - 10px)
+
+.dots_slider
+  position: absolute
+  top: 0
+  li
+    display: inline-block
+    margin: 17px 36px
+    border-radius: 50%
+    width: 67px
+    height: 67px
+    cursor: pointer
+    position: relative
+    background: #acacac no-repeat 50% 90%
+    &::after,&::before
+      position: absolute
+      content: ''
+      background-color: #d3d3d3
+    &::after
+      top: 50%
+      right: calc(-100% - 5px)
+      height: 1px
+      width: 72px
+    &::before
+      right: 50%
+      width: 1px
+      height: 34px
+      top: 100%
+    &:first-child
+      background-image: url(../img/tech_slides/ico_1.png)
+    &:nth-child(2)
+      background-image: url(../img/tech_slides/ico_5.png)
+    &:nth-child(3)
+      background-image: url(../img/tech_slides/ico_3.png)
+      &::after
+        display: none
+    &:nth-child(4)
+      background-image: url(../img/tech_slides/ico_2.png)
+      &::before
+        display: none
+    &:nth-child(5)
+      background-image: url(../img/tech_slides/ico_4.png)
+      &::before
+        display: none
+    &:last-child
+      background-image: url(../img/tech_slides/ico_6.png)
+      &::after,&::before
+        display: none
+    button
+      color: transparent
+      border: none
+      background-color: transparent
+      outline: none
+  .slick-active
+    transition: all 0.5s ease
+    background-color: #987cf1
+    border-radius: 50%
+    box-shadow: 0 5px 15px rgba(204, 158, 252, 1)
+
+
+
+
+
+
+//START BOX TV STYLES
+.box_tv_img
+  float: left
+  margin-left: 34px
+
+.box_tv_img
+	width: 350px
+	height: 422px
+	margin-top: 80px
+	position: relative
+	transition: all 0.7s easex
+
+.under_cap,.up_cap
+	position: absolute
+	background-repeat: no-repeat
+	background-size: cover
+
+.up_cap
+  transition: all 0.8s ease
+  z-index: 15
+
+.up_cap
+	width: 347px
+	height: 366px
+	background-image: url(../img/cap.png)
+	z-index: 10
+	top: 38px
+	left: -14px
+
+.under_cap
+	width: 439px
+	height: 404px
+	background-image: url(../img/box_tv.png)
+	z-index: 5
+
+.animate_cup
+  transform: translate(-20px, 20px)
+
+.wrap_box
+  position: relative
+  height: 100%
+
+.active_box
+  .up_cap
+    transform: translate(-20px, 20px)
+  .informer
+    opacity: 1
+    transform: translate(0,0)
+
+.informer
+  position: absolute
+  font-size: 16px
+  line-height: 1.2
+  min-width: 50px
+  min-height: 26px
+  text-align: left
+  z-index: 20
+  font-family: $default-font-medium
+  background-color: #ffd936
+  border-left: 1px solid #d1b22c
+  color: #333745
+  transform: translate(-20px, 15px)
+  opacity: 0
+  z-index: 10
+  transition: all 0.2s ease
+  &::after
+    position: absolute
+    content: ''
+    width: 10px
+    height: 10px
+    left: -7px
+    bottom: -7px
+    z-index: 12
+    background-size: cover
+    background-image: url(../img/icons/mini_dot_eq.png)
+
+.for_line
+  position: relative
+  padding: 3px 8px 4px
+  
+.in_line
+  position: absolute
+  width: 1px
+  height: 115px
+  background-color: #ffd936
+  left: -35px
+  top: calc(100% - 8px)
+  transform: rotate(35deg)
+  transition: all 0.3s ease
+  &::before
+    content: ''
+    position: absolute
+    left: -3px
+    bottom: -3px
+    background-color: #ffd936
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    
+.hov_in_line
+  background: #ffd936 linear-gradient(to bottom, #333745, #ffd936)
+  transition: all 0.3s ease
+  &::before
+    background-color: #ffd936
+    
+.hov_iform
+  background-color: #333745!important
+  color: #ffd936!important
+  &::after
+    background-image: url(../img/icons/hov_mini_dot_eq.png)
+
+.inf_01
+  left: 27%
+  top: -55px
+  transition-delay: 0
+  .in_line
+    height: 90px
+    left: -27px
+
+.inf_02
+  right: -23%
+  top: 0
+  transition-delay: 0.1s
+
+.inf_03
+  right: -30%
+  top: 13%
+  transition-delay: 0.2s
+
+.inf_04
+  right: -47%
+  top: 30%
+  transition-delay: 0.3s
+
+.inf_05
+  right: -30%
+  top: 55%
+  transition-delay: 0.4s
+
+.inf_06
+  right: -30%
+  bottom: 20%
+  transition-delay: 0.5s
+  .in_line
+    height: 70px
+    top: calc(100% - 15px)
+    left: -29px
+    transform: rotate(55deg)
+//END TV BOX STYLES
+
+
+
+
+  
+  
+  
+  
+  
+  
+  

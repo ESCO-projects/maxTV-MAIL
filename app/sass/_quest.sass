@@ -1,0 +1,182 @@
+.quest__scaler
+  visibility: visible!important
+  transform: scale(1)!important
+
+.body_stop
+  overflow: hidden!important
+  z-index: 900!important
+
+.quest
+  position: fixed
+  bottom: 0
+  left: 0
+  height: 100vh
+  overflow-x: hidden
+  width: 100vw
+  max-width: 100%
+  background-color: rgba(0, 0, 0, 0.8)
+  z-index: 99999
+  color: #fff
+  transition: all 0.5s ease
+  transform: scale(0)
+  visibility: hidden
+  &::after
+    position: absolute
+    content: ''
+    bottom: 0
+    left: 30%
+    width: 187px
+    height: 351px
+    background-image: url(../img/quest_men.png)
+  &__wrapp
+    min-height: 100%
+  &__title
+    margin-top: 125px
+    min-height: 130px
+    background: #f05f57 linear-gradient(to left, #360940, #f05f57)
+    text-align: center
+    h5
+      font-size: 24px
+      font-family: $default-font-bold
+      margin: 0 0 5px
+      br
+        display: none
+    p
+      margin: 0
+      font-size: 16px
+      line-height: 1.5
+      font-family: $default-font-light
+  &__title-cont
+    height: 100%
+    padding: 15px 15px 30px
+    background-size: contain
+    background: url(../img/pattern_tv.png) repeat
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      left: calc(50% - 15px)
+      bottom: -15px
+      width: 32px
+      height: 31px
+      background-size: 21px 19px
+      border-radius: 50%
+      background: rgba(0, 0, 0, 0.5) url(../img/icons/world_ico.png) no-repeat 50% 50%
+  &__closer
+    border: 2px solid rgba(255, 255, 255, 0.2)
+    border-radius: 50%
+    position: absolute
+    left: calc(50% - 26px)
+    top: -74px
+    width: 52px
+    height: 52px
+    cursor: pointer
+    transition: all 0.4s ease
+    &:hover
+      background-color: #fff
+      transform: rotate(180deg)
+      .quest__closer-lines
+        &::before,&::after
+          background-color: #000
+    &-lines
+      height: 1px
+      width: 36px
+      background-color: transparent
+      margin: 24px auto
+      position: relative
+      &::before,&::after
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 1px
+        background-color: #fff
+        transition: all 0.3s ease
+      &::before
+        transform: rotate(-45deg)
+      &::after
+        transform: rotate(45deg)
+  &__content
+    padding-top: 30px
+  &__text
+    max-width: 345px
+    float: right
+    p
+      margin: 0 0 20px
+      font-size: 16px
+      line-height: 20px
+      font-family: $default-font-light
+  &__form
+    width: 260px
+    float: left
+    input,textarea,button
+      display: block
+      width: 100%
+      background-color: transparent
+      outline: none
+      border-radius: 4px
+      font-size: 16px
+      color: #fff
+      font-family: $default-font-light
+      margin-bottom: 16px
+      &::placeholder
+        color: #fff
+        opacity: 0.7
+        transition: all 0.3s eases
+      &:active,&:focus
+        border: 1px solid #FFD936
+        background-color: rgba(0, 0, 0, 0.5)
+        &::placeholder
+          opacity: 0
+    input
+      height: 34px
+      background: no-repeat 10px 8px
+      padding-left: 39px
+      transition: all 0.3s ease
+      border: 1px solid #fff
+    textarea
+      height: 110px
+      padding: 10px 13px
+      border: 1px solid #fff
+      resize: vertical
+  &__inp
+    position: relative
+    height: auto
+  &__name
+    background-image: url(../img/svg_elem/user_ico.svg) !important
+  &__phone
+    background-image: url(../img/svg_elem/phone_ico.svg) !important
+  &__btn
+    transition: all 0.3s ease
+    height: 50px
+    border: none
+    text-transform: uppercase
+  &__yellow-col
+    color: #ffc71a
+  &__yellow-bg
+    color: #010101
+    background-color: #ffc71a
+    position: relative
+    padding: 0 3px 2px
+    &::after
+      position: absolute
+      content: ''
+      width: 21px
+      height: 15px
+      right: -31px
+      top: 2px
+      background-image: url(../img/icons/arr_white_form.png)
+      animation-name: swag_arr
+      animation-iteration-count: 6
+      animation-duration: 1.5s
+      animation-timing-function: ease
+      @keyframes swag_arr
+        50%
+          transform: translateX(4px)
+        100%
+          transform: translateX(0px)
+
+
+
+    

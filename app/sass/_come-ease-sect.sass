@@ -1,0 +1,346 @@
+.come
+  background-color: #fff
+  padding: 50px 0
+  position: relative
+  min-height: 550px
+  &::before,&::after
+    position: absolute
+    content: ''
+    height: 50px
+    width: 100%
+    left: 0
+  &::before
+    top: 0
+    background-image: linear-gradient(to bottom, #EFF3F6, #fff)
+  &::after
+    bottom: 0
+    background-image: linear-gradient(to top, #EFF3F6, #fff)
+  &__title
+    text-align: center
+    h3
+      color: #656d89
+      position: relative
+      display: inline-block
+      &::before,&::after
+        position: absolute
+        content: ''
+        top: 0
+        width: 12px
+        height: 57px
+        background-image: url(../img/icons/brackets.png)
+      &::before
+        left: -18px
+        transform: rotate(180deg)
+      &::after
+        right: -18px
+    p
+      font-size: 18px
+      color: #000
+      font-family: $default-font-medium
+  &__center
+    position: absolute
+    width: 100%
+    height: auto
+    top: 170px
+    left: 0
+    z-index: 2
+  &__center_content
+    max-width: 500px
+    min-height: 210px
+    margin: 0 auto
+    padding: 5px 25px 40px
+    text-align: center
+    border-radius: 10px
+    background-image: linear-gradient( to right, rgb(206,159,252), rgb(115,103,240))
+    position: relative
+    svg
+      position: absolute
+      top: -5px
+      left: calc(50% - 40px)
+    p
+      font-size: 18px
+      line-height: 1
+      font-family: $default-font-medium
+      color: #fff
+      margin: 15px 0 0
+    p.yell
+      background-color: #ffdf54
+      border-radius: 3px
+      padding: 7px 10px 10px
+      color: #3d3d3d
+      br
+        display: none
+      span
+        font-family: $default-font-light
+    p.subp
+      font-size: 16px
+      text-shadow: 1px 0 3px rgba(0, 0, 0, 0.3)
+      position: relative
+      img
+        position: absolute
+        width: 22px
+        height: 13px
+        bottom: -40px
+        left: calc(50% - 5px)
+        animation-duration: 2s
+        animation-iteration-count: infinite
+  &__button
+    box-shadow: 0 0 8.6px 1.4px rgba(246, 70, 110, 0.4),inset 0 0 25px 0 rgba(255, 238, 222, 0.52)
+    position: absolute
+    display: block
+    bottom: -23px
+    padding-top: 13px
+    letter-spacing: 1px
+    font-size: 14px
+    font-family: $default-font-medium
+    text-transform: uppercase
+    left: calc(50% - 140px)
+    border-radius: 25px
+    width: 280px
+    height: 50px
+  &__grid
+    min-height: 460px
+    max-width: 1077px
+    background-size: contain
+    background-position: -66px -30px!important
+    background: url(../img/grid.png) no-repeat
+    position: relative
+    svg
+      position: absolute
+      left: 70px
+      top: 55px
+      max-width: 920px
+    .square
+      min-height: 90px
+      max-width: 119px
+      text-align: center
+      position: relative
+      opacity: 0
+      z-index: 90
+      p
+        margin: 10px 0 0
+        color: #656d89
+        font-size: 14px
+        line-height: 1.2
+        font-family: $default-font-medium
+    .cube_cean,.cube_yellow,.cube_gray
+      margin: 0 auto
+      position: relative
+      border-radius: 40%
+      z-index: 2!important
+  &__first
+    margin-top: 40px
+  &__second
+    margin-top: 200px
+    .cube_cean,.come__shadow
+      animation-delay: 0.8s
+  &__third
+    margin-top: 278px
+    .cube_cean,.come__shadow
+      animation-delay: 1.6s
+  &__four
+    margin-top: 265px
+    .cube_yellow,.come__shadow
+      animation-delay: 2.4s
+  &__five
+    margin: 280px auto 0
+    .cube_gray,.come__shadow
+      animation-delay: 3.2s
+  &__six
+    margin: 200px auto 0
+    .cube_gray,.come__shadow
+      animation-delay: 4s
+  &__shadow
+    position: absolute
+    z-index: 0!important
+    top: -60px
+    left: 0
+    width: 100%
+    height: 50px
+    border-radius: 50%
+    box-shadow: 0 80px 30px -20px rgba(0, 0, 0, 0.8)
+  &__sh_yell
+    top: -30px!important
+  &__decr
+    margin-top: -140px
+    position: relative
+    z-index: 15
+    .cube_decr
+      width: 45px!important
+      height: 26px!important
+    .cube_decr_yell
+      margin: 8px 0
+      width: 45px!important
+      height: 30px!important
+
+.js_anim_platform
+  animation-name: come_position
+  animation-duration: 4.8s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+.js_anim_shadow
+  animation: come_shadow 4.8s infinite linear
+
+@keyframes come_shadow
+  0%
+    box-shadow: 0 80px 30px -20px rgba(0, 0, 0, 0.8)
+  50%
+    box-shadow: 0 80px 30px -10px rgba(0, 0, 0, 0.2)
+  100%
+    box-shadow: 0 80px 30px -20px rgba(0, 0, 0, 0.8)
+
+@keyframes come_position
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(-12px)
+  100%
+    transform: translateY(0px)
+
+.cube_cean,.cube_yellow,.cube_gray
+  background-size: contain
+  background-repeat: no-repeat
+  position: relative
+  span
+    font-family: $default-font-light
+    font-size: 16px
+    color: #8e8e8e
+    position: absolute
+    display: inline-block
+    width: 160px
+    top: 0
+    right: -170px
+    transition: all 0.2s ease
+  &:hover
+    span
+      color: #000
+  &::before,&::after
+    position: absolute
+    content: ''
+
+.cube_gray
+  width: 85px
+  height: 53px
+  background-image: url(../img/svg_elem/cubeu_gray.svg)
+.cube_yellow
+  width: 119px
+  height: 83px
+  background-image: url(../img/svg_elem/cube_yellow.svg)
+.cube_cean
+  width: 85px
+  height: 52px
+  background-image: url(../img/svg_elem/cubeu_cean.svg)
+
+.glass
+  &:hover
+    span
+      top: 16px
+      letter-spacing: 2px
+      transform: rotate(0deg) translateX(25px)
+  &::after
+    right: -35px
+    top: 50%
+    width: 25px
+    height: 1px
+    background-color: #e6e6e6
+  span
+    height: 20px
+    padding-top: 0px
+    width: 60px
+    text-align: center
+    padding-right: 43px
+    right: -90px
+    top: 24px
+    transform: rotate(90deg)
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      left: -70%
+      width: 200%
+      height: 300%
+  &::before
+    top: -15px
+    left: 20px
+    width: 34px
+    height: 64px
+    background-image: url(../img/icons/glass.png)
+.libra
+  &::before
+    top: -22px
+    left: 17px
+    width: 47px
+    height: 53px
+    background-image: url(../img/icons/libra.png)
+.world_esco
+  &::before
+    top: -23px
+    left: 19px
+    width: 42px
+    height: 56px
+    background-image: url(../img/icons/world_esco.png)
+.call_men
+  &::before
+    top: -27px
+    left: 36px
+    width: 44px
+    height: 80px
+    background-image: url(../img/icons/human.png)
+.call_center
+  &::before
+    top: -18px
+    left: 22px
+    width: 37px
+    height: 55px
+    background-image: url(../img/icons/call_men.png)
+.get_tv
+  span
+    top: -130px
+    right: -35px
+    transform: rotate(-90deg)
+    height: 50px
+    padding-top: 15px
+  &:hover
+    span
+      letter-spacing: 2px
+      transform: rotate(0deg)
+    &::after
+      transform: translateY(-15px)
+  &::after
+    right: 43px
+    top: -65px
+    width: 1px
+    height: 25px
+    background-color: #e6e6e6
+    transition: all 0.2s ease
+  &::before
+    top: -19px
+    left: 11px
+    width: 62px
+    height: 60px
+    background-image: url(../img/icons/tv_sq.png)
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

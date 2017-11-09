@@ -1,0 +1,90 @@
+.time
+  min-height: 654px
+  background-color: #eff3f6
+  padding-bottom: 170px
+  &__wrap
+    margin-top: -167px
+  &__tv__inner
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 506px
+    background-size: contain
+    background: url(../img/tv_fire.png) no-repeat
+    z-index: 99
+    h3
+      margin-top: 90px
+      br
+        display: none
+    .time_go
+      margin: 33px auto 0
+      float: none
+      border: none
+      background-image: linear-gradient( 90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%)
+      box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.22),inset 0px -1px 30px 0px rgba(110, 181, 254, 0.3)
+      &::before,&::after
+        background-color: #000
+        opacity: 0.4
+    .time_type
+      position: static
+      margin: 10px auto 0
+      text-align: center
+      .dib
+        margin: 0
+        width: 33%
+        float: left
+        font-family: $default-font-medium
+        font-size: 18px
+  &__tv
+    max-width: 786px
+    height: 506px
+    margin: 0 auto
+    position: relative
+    &::before,&::after
+      position: absolute
+      top: 100px
+      content: ''
+      width: 382px
+      height: 237px
+      background-size: cover
+    &::before
+      left: -175px
+      background-image: url(../img/blue_fire.png)
+    &::after
+      right: -175px
+      background-image: url(../img/blue_fire_2.png)
+  &__text
+    max-width: 814px
+    min-height: 175px
+    margin: -15px auto 0
+    border-left: 2px dashed #d0d0d0
+    border-right: 2px dashed #d0d0d0
+    border-bottom: 2px dashed #d0d0d0
+    text-align: center
+    padding: 15px 80px 45px
+    position: relative
+    &::before,&::after
+      position: absolute
+      content: ''
+      top: 0
+      width: 100px
+      height: 2px
+      border-top: 2px dashed #d0d0d0
+    &::before
+      left: 0
+    &::after
+      right: 0
+    h6
+      font-family: $default-font-bold
+      color: #354052
+      font-size: 16px
+      line-height: 1
+      margin: 0
+      span
+        color: #736efe
+    p
+      margin: 0
+    .cont_btn
+      bottom: -25px
+      left: calc(50% - 140px)

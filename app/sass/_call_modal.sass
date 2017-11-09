@@ -1,0 +1,83 @@
+.callme
+  margin: 0 auto
+  width: 580px
+  height: 200px
+  border-radius: 10px
+  background: rgba(255, 255, 255, 0.9) linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25))
+  box-shadow: 0 20px 29px 0 rgba(0, 0, 0, 0.4)
+  text-align: center
+  position: relative
+  padding-top: 18px
+  .free_c
+    position: absolute
+    bottom: 8px
+    right: 15px
+    color: #000000
+    opacity: 0.4
+    font-size: 16px
+    font-family: $default-font-light
+  &__title
+    font-size: 24px
+    font-family: $default-font-bold
+    br
+      display: none
+    img
+      display: inline-block
+      max-width: 100%
+      margin: 0 8px 5px
+    .blk
+      color: #000000
+    .blu
+      color: #504db1
+  &__sub-title
+    padding-top: 10px
+    font-size: 16px
+    color: #000000
+    font-family: $default-font-light
+  form,label,input,.sendr
+    display: block
+  form
+    margin-top: 18px
+  label
+    display: inline-block
+    padding: 0 10px
+    position: relative
+  button.sendr
+    position: absolute
+    width: 260px
+    height: 51px
+    outline: none
+    border: none
+    bottom: -10px
+    left: calc(50% - 130px)
+    border-radius: 4px
+    font-size: 14px
+    color: #fff
+    padding-top: 1px
+    text-align: center
+    text-transform: uppercase
+    text-shadow: 0px 1px 0.6px rgba(0, 0, 0, 0.32)
+    transition: all 0.3s ease
+  input
+    width: 220px
+    height: 34px
+    border: none
+    border-radius: 4px
+    padding-left: 39px
+    outline: none
+    box-shadow: 0px 0px 9.3px 0.7px rgba(255, 255, 255, 0.32)
+    background: rgba(255, 255, 255, 0.749) no-repeat 10px center
+    color: #000
+    opacity: 0.7
+    transition: all 0.3s ease
+    &:focus,&:active,&:valid
+      opacity: 1
+      color: #000!important
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5)
+  .usr
+    background-image: url(../img/icons/user_call.png)
+    background-size: 16px
+  .phn
+    background-image: url(../img/icons/call_mini.png)
+    background-size: 19px
+

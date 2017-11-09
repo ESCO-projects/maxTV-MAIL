@@ -1,0 +1,329 @@
+.mod
+  border-radius: 10px
+  box-shadow: 0 11px 40px 2.15px rgba(0, 0, 0, 0.25)
+  width: 810px
+  min-height: 420px
+  background-color: #fff
+  margin: 0 auto
+  input,label
+    display: block
+  .modal__closer
+    cursor: pointer
+  &__slider
+    min-height: 294px
+    max-width: 810px
+    position: relative
+  &__step
+    max-width: 810px
+    padding-bottom: 5px
+    float: left
+    border: none
+    outline: none
+    input
+      outline: none
+      width: 100%
+      border: 1px solid rgb(209, 209, 209)
+      border-radius: 4px
+      background-color: rgba(255, 255, 255, 0.502)
+      box-shadow: 0 0 9.3px 0.7px rgba(255, 255, 255, 0.32)
+      height: 34px
+      transition: all 0.3s ease
+      padding: 0 20px
+      color: #000!important
+      position: relative
+      z-index: 2
+      &:hover,&:focus,&:active
+        border-color: transparent
+        box-shadow: 0 0 9px 0px #bcbcbc
+    label
+      position: relative
+      cursor: pointer
+      img
+        position: absolute
+        max-width: 100%
+        left: -30px
+        top: 7px
+  &__first-step
+    max-width: 555px
+    margin: 0 auto
+    p
+      display: none
+    label
+      margin: 0 0 17px
+      max-width: 194px
+  &__second-step
+    label
+      margin-bottom: 16px
+      span
+        color: #000
+        opacity: 0.6
+        font-size: 16px
+        font-family: $default-font-light
+  &__place
+    width: 422px
+    margin-left: 162px
+    height: 34px
+    label
+      width: 194px
+      float: left
+      margin-right: 17px
+  &__calendar
+    height: 34px
+    width: 442px
+    margin-left: 124px
+    margin-bottom: 32px
+    label
+      width: 100%
+      span
+        line-height: 1.8
+      input
+        float: right
+        margin-left: 20px
+        margin-right: 69px
+        width: 124px
+  &__provider
+    max-width: 590px
+    margin-left: 124px
+    padding-bottom: 80px
+    height: auto
+    label
+      cursor: pointer
+      display: inline-block
+      min-width: 99px
+      height: 35px
+      border: 1px solid rgb(209, 209, 209)
+      border-radius: 4px
+      background-color: rgba(255, 255, 255, 0.502)
+      box-shadow: 0 0 9.3px 0.7px rgba(255, 255, 255, 0.32)
+      margin: 0 0 0 9px
+      text-align: right
+      padding-right: 12px
+      overflow: hidden
+      transition: all 0.3s ease
+      &:hover
+        box-shadow: 0px 3px 4px 0px rgba(255, 217, 54, 0.45)
+      span
+        font-size: 16px
+        color: #000
+        line-height: 1.9
+        opacity: 1
+      input
+        float: left
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        box-shadow: none
+        margin: 9px
+        position: relative
+        &::before,&::after
+          position: absolute
+          content: ''
+          transition: all 0.3s ease
+          cursor: pointer
+        &::before
+          width: 170px
+          height: 50px
+          background-color: transparent
+          left: -20px
+          top: -20px
+          z-index: -1
+        &::after
+          left: 0
+          top: 0
+          width: 14px
+          height: 14px
+          background-color: #fff
+          border-radius: 50%
+          border: 1px solid #ffd936
+        &:checked,&:hover
+          box-shadow: none
+          &:before
+            background-color: #ffd936
+          &::after
+            background-color: #786af0
+  &__provider--title
+    float: left
+    display: inline-block
+    font-size: 16px
+    line-height: 1
+    opacity: 0.6
+  &__providers
+    float: right
+  &__pay_type
+    padding-left: 92px
+    margin-bottom: 26px
+    label
+      display: inline-block
+      margin-right: 28px
+      text-align: left
+      cursor: pointer
+      &:first-child
+        input
+          &::before
+            width: 147px
+      &:nth-child(2)
+        input
+          &::before
+            width: 44px
+      &:nth-child(3)
+        input
+          &::before
+            width: 38px
+      &:nth-child(4)
+        input
+          display: inline-block
+          margin-right: 20px
+          &:checked
+            &::after
+              top: -19px
+              font-size: 20px
+              height: 27px
+              border-bottom-color: #ebebeb
+          &::after
+            cursor: pointer
+            position: absolute
+            width: 16px
+            height: 23px
+            padding-bottom: 3px
+            left: 0
+            top: -16px
+            color: #000
+            font-size: 16px
+            text-align: center
+            font-family: $default-font-medium
+            border-bottom: 3px solid transparent
+            transition: all 0.1s ease
+        .decod_1
+          &::after
+            content: '1'
+        .decod_2
+          &::after
+            content: '2'
+        .decod_3
+          &::after
+            content: '3'
+      input
+        display: block
+        width: 0
+        height: 0
+        position: relative
+        &:checked
+          &::before
+            background-color: #ffd936
+        &::before
+          position: absolute
+          left: 0
+          bottom: -3px
+          content: ''
+          height: 3px
+          cursor: pointer
+          background-color: #ebebeb
+  &__cart--one
+    padding-left: 92px
+    margin-bottom: 20px
+    label
+      display: inline-block
+      margin-right: 44px
+      &:last-child
+        margin-right: 0
+  &__cart--two
+    padding-left: 92px
+    label
+      display: inline-block
+      &:first-child,&:nth-child(2)
+        width: 105px
+        margin-right: 21px
+      &:last-child
+        margin-left: 4px
+  &__title-wrap
+    display: inline-block
+    margin: 0 auto
+    position: relative
+    &::before,&::after
+      position: absolute
+      content: ''
+      top: -6px
+      width: 12px
+      height: 57px
+      background-image: url(../img/icons/brackets.png)
+    &::after
+      right: -15px
+    &::before
+      transform: rotate(180deg)
+      left: -15px
+  &__title
+    text-align: center
+    font-size: 24px
+    font-family: $default-font-bold
+    color: #000
+    line-height: 1
+    margin: 40px 0 30px
+    span
+      color: #b4b4b4
+      font-size: 18px
+      font-family: $default-font-medium
+  &__footer
+    background-image: linear-gradient(to bottom, rgb(230,230,230) 0%, rgba(230,230,230,0) 100%)
+    width: 100%
+    min-height: 128px
+    padding-top: 39px
+    text-align: center
+  &__dots
+    position: absolute
+    bottom: -18px
+    left: 42%
+    text-align: center
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.15)
+    width: 142px
+    height: 38px
+    border-radius: 19px
+    li.slick-active
+      background-color: #31d189
+    li
+      display: inline-block
+      margin: 12px 10px
+      border-radius: 50%
+      background-color: rgb(193, 193, 193)
+      box-shadow: 0 0 16px 0 rgba(193, 193, 193, 0.004)
+      width: 14px
+      height: 14px
+      overflow: hidden
+      transition: all 0.3s ease
+      button
+        background-color: transparent
+        border: none
+        outline: none
+        width: 100%
+        height: 100%
+        color: transparent
+  &__buttons
+    display: inline-block
+    .mod_send
+      display: none
+      padding-top: 0
+      outline: none
+  &__btn
+    width: 220px
+    height: 50px
+    border-radius: 6px
+    font-size: 14px
+    text-transform: uppercase
+    font-family: $default-font-medium
+    display: inline-block
+    margin: 0 10px
+    padding-top: 13px
+    cursor: pointer
+  &__prev
+    color: #818181
+    border: 1px solid rgb(205, 205, 205)
+  &__next,button.mod_send
+    background-image: linear-gradient( -180deg, rgb(50,210,130) 0%, rgb(3,179,210) 100%)
+    box-shadow: 0 0 18.06px 2.94px rgba(45, 220, 175, 0.42),inset 0 0 25px 0px rgba(13, 99, 215, 0.3)
+    color: rgb(255, 255, 255)
+    text-shadow: 0 1px 0.6px rgba(0, 0, 0, 0.32)
+    border: 1px solid transparent
+
+.datepicker
+  z-index: 9999!important
+

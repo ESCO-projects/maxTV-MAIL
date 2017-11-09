@@ -1,0 +1,110 @@
+.videos
+  min-height: 594px
+  background-color: #fff
+  position: relative
+  &::before,&::after
+    position: absolute
+    content: ''
+  &::before
+    width: 52px
+    height: 52px
+    background-color: #fff
+    border-radius: 50%
+    top: -25px
+    left: calc(50% - 26px)
+    background-image: url(../img/icons/top_elips.png)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+  &::after
+    width: 114px
+    height: 57px
+    top: 0
+    left: calc(50% - 57px)
+    background-image: url(../img/icons/slider_circle_decor.png)
+  h3
+    padding-top: 25px
+    color: #656d89
+    position: relative
+    z-index: 10
+  &__slider
+    min-height: 330px
+    max-width: 1415px
+    margin: 60px auto 0
+    padding: 10px
+    text-align: center
+  &__slide
+    max-width: 460px
+    height: 100%
+    margin: 0
+    &:hover
+      .videos__layer
+        background-color: rgba(0, 0, 0, 0.5)
+      .videos__play-btn
+        opacity: 1
+        transform: translateY(0)
+  &__video
+    width: 100%
+    height: 260px
+    border-radius: 8px
+    box-shadow: 0 10px 33.25px 1.75px rgba(0, 0, 0, 0.4)
+    background-size: cover
+    background: #000 50% 50%
+    position: relative
+  &__text
+    max-width: 460px
+    height: 70px
+    text-align: center
+  &__link
+    position: absolute
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 10
+    &:active,&:focus,&:visited
+      border: none
+      outline: none
+  &__layer
+    position: absolute
+    height: 100%
+    width: 100%
+    border-radius: 8px
+    color: #fff
+    transition: all 0.3s ease
+    text-align: left
+    padding-left: 20px
+    padding-top: 150px
+    h6
+      font-weight: normal
+      margin: 0
+      font-size: 18px
+      line-height: 1.15
+      font-family: $default-title
+    p
+      line-height: 1.15
+      margin: 0 0 18px
+      display: block
+      font-size: 18px
+      font-family: $default-font-medium
+    img
+      display: block
+      max-width: 100%
+      float: left
+  &__play-btn
+    padding-left: 50px
+    font-size: 16px
+    font-family: $default-font-light
+    position: relative
+    transform: translateY(15px)
+    opacity: 0
+    transition: all 0.3s ease
+    &::before
+      position: absolute
+      content: ''
+      width: 38px
+      height: 38px
+      left: 0
+      top: -5px
+      background-image: url(../img/icons/youtube.png)
+
+.slick-dots
+  bottom: -5px!important

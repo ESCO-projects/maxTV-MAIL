@@ -1,0 +1,174 @@
+.benefit
+	min-height: 460px
+	background-color: #736efe
+	padding-top: 20px
+	position: relative
+	.decor_circle
+    position: absolute
+    left: calc(50% - 23px)
+    width: 56px
+    height: 56px
+    border-radius: 30px
+    background-color: #736efe
+    z-index: 9
+	.decor_circle.top
+		top: -23px
+		.yellow_in
+			margin: 15px auto 0
+      position: relative
+		&::before
+			position: absolute
+			top: -47px
+			left: -45px
+			content: ''
+			width: 147px
+			height: 71px
+			background-image: url(../img/icons/round.png)
+	.decor_circle.bottom
+		bottom: -27px
+		.yellow_in
+			margin: 19px auto 0
+		&::after
+			position: absolute
+			content: ''
+			width: 101px
+			height: 50px
+			bottom: -23px
+			left: -22px
+			background-image: url(../img/icons/round_bottom.png)
+	.yellow_in
+		width: 19px
+		height: 19px
+		border-radius: 10px
+		background-color: #f8d304
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    
+.big_circle
+  position: absolute
+  width: 534px
+  height: 296px
+  z-index: 0
+.big_circle.left-c
+  bottom: 30px
+  left: -554px
+  background-image: url(../img/icons/l_big_circle.png)
+.big_circle.right-c
+  top: 20px
+  right: -578px
+  background-image: url(../img/icons/r_big_circle.png)
+
+.muscle
+  z-index: 99
+  position: relative
+  transition: all 0.4s ease
+  .muscle__circle
+    cursor: pointer
+    p
+      transition: all 0.4s ease
+  &:hover
+    .muscle__sub
+      color: #fff
+    .muscle__circle
+      background-color: #ffd936
+      p
+        opacity: 1
+
+.opa
+  opacity: 1!important
+
+
+.muscle.first
+  &:hover
+    .muscle__circle
+      p
+        opacity: 1
+        transform: translateX(-5px)
+
+.muscle.second
+  &:hover
+    .muscle__circle
+      p
+        opacity: 1
+        transform: translateX(5px)
+
+
+.muscle
+	text-align: center
+	margin-top: 47px
+	&__sub
+    color: #ffd936
+    font-size: 16px
+    font-family: $default-font-medium
+    transition: all 0.4s ease
+	.yellow
+		background-color: #ffd936
+	.blue
+		background-color: #6763e4
+	&__circle
+    height: 80px
+    width: 80px
+    margin-bottom: 5px
+    border-radius: 40px
+    position: relative
+    transition: all 0.4s ease
+    img
+      display: block
+      max-width: 100%
+      position: absolute
+      left: 0
+      top: calc(50% - 40px)
+    img.arr_ico
+      top: calc(50% - 25px)
+    img.kid_ico
+      top: calc(50% - 45px)
+    img.hand_ico
+      left: 10px
+    p
+      line-height: 1.2
+      width: 300px
+      position: absolute
+      opacity: 0.2
+      top: 0
+      left: calc(100% + 20px)
+      color: #fff
+      font-size: 16px
+      font-family: $default-font-light
+
+.first
+	transform: translateX(28px)
+	p
+		text-align: left
+		padding-left: 25px
+		top: -7px
+		&::after
+			position: absolute
+			top: calc(50% - 10px)
+			left: 2px
+			content: ''
+			height: 17px
+			width: 10px
+			background-image: url(../img/icons/l_arrow.png)
+
+.second
+  padding-top: 100px
+  p
+  	padding-right: 20px
+  	text-align: right
+  	left: calc(-100% - 230px)!important
+  	top: calc(100% - 15px)
+  	&::after
+  		position: absolute
+  		top: calc(50% - 8px)
+  		right: -8px
+  		content: ''
+  		height: 17px
+  		width: 10px
+  		background-image: url(../img/icons/r_arrow.png)
+.mr_l
+	transform: translateX(-24px)
+.mr_r
+	margin-right: 22px
+.fl_r
+	float: right
+.fl_l
+	float: left
