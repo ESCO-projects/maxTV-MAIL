@@ -55,7 +55,7 @@ $(function() {
     firstTimer = setTimeout(function(){
         $('.quest').addClass('quest__scaler').css('bottom','0');
         $('body').addClass('body_stop');
-    }, 50000);
+    }, 5000);
 
     $('.quest__closer').click(function () {
         $('.quest').removeClass('quest__scaler');
@@ -115,14 +115,6 @@ $(function() {
     });
     /*END POPUP MODAL FORM*/
 
-/*    $( "#this_form" ).submit(function( event ) {
-        if ( $('.mod__first-step input').val() === '') {
-            $('.js_mod_slider').slick('slickGoTo', 0);
-            $('.mod__first-step input').prop('required',true);
-            return;
-        }
-        event.preventDefault();
-    });*/
 
     $('.mod__btn').click(function() {
         $('.mod__step').find('input').each(function(){
@@ -130,7 +122,6 @@ $(function() {
                $(this).prop('required',true);
                var slidenum = $(this).data('slide');
                $('.js_mod_slider').slick('slickGoTo', slidenum);
-               /*$('.js_mod_slider').slick('slickGoTo', 0);*/
            }
         });
     });

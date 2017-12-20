@@ -10,7 +10,7 @@ $(function() {
     /*show & hide fixed nav menu*/
     $(window).scroll(function(){
         var winTop = $(window).scrollTop();
-        if(winTop >= 200){
+        if(winTop >= 300){
             $(".fix").addClass('menu_in animated fadeInDown').removeClass('fadeOutUp');
         }else{
             $(".fix").removeClass('fadeInDown').addClass('fadeOutUp');

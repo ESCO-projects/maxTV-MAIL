@@ -53,7 +53,7 @@
 
 
   <!--STYLES MAIN START-->
-  <link rel="stylesheet" href="css/main.min.css?ver=2.05">
+  <link rel="stylesheet" href="css/main.min.css?ver=2018.01">
   <!--STYLES MAIN END-->
 
   <!--START GOOGLE OPTIMIZE-->
@@ -110,14 +110,17 @@
 </head>
 <body>
 <div class="main-all-wrapper md_wrap">
-  <div class="warning_ie8">
-    <p><b><big>Внимание!</big></b> Вы зашли на сайт с устаревшего браузера Internet Explorer 8</p>
-    <p>Пожалуйста установите новый браузер <a target="_blank" href="https://www.google.com/intl/uk/chrome/browser/desktop/index.html"><b>&#8594; Chrome &#8592;</b></a> или зайдите на сайт с другого браузера.</p>
-    <p class="iemax">Также Вы можете оставить заявку и наш менеджер позвонит Вам и расскажет все детали!</p>
-    <hr>
-  </div>
-    <!--fixed mobile menu-->
-<nav class="mobile_mnu fix_mnu">
+
+    <!-- if ie show block -->
+    <div class="warning_ie8">
+      <p><b><big>Внимание!</big></b> Вы зашли на сайт с устаревшего браузера Internet Explorer 8</p>
+      <p>Пожалуйста установите новый браузер <a target="_blank" href="https://www.google.com/intl/uk/chrome/browser/desktop/index.html"><b>&#8594; Chrome &#8592;</b></a> или зайдите на сайт с другого браузера.</p>
+      <p class="iemax">Также Вы можете оставить заявку и наш менеджер позвонит Вам и расскажет все детали!</p>
+      <hr>
+    </div>
+
+    <!-- fixed mobile menu -->
+    <nav class="mobile_mnu fix_mnu">
       <a href="#advantages"><span>Преимущества</span></a>
       <a href="#tariff"><span>Тарифы</span></a>
       <a href="#equipment"><span>Оборудование</span></a>
@@ -126,47 +129,97 @@
       <a href="#contacts"><span>Контакты</span></a>
       <a class="popup_modal js_value" data-form="Кнопка Техническа поддержка Мобильное меню" href="#tech_form">Тех-поддержка</a>
     </nav>
-    <!--fixed header-->
-<header class="fix">
-      <div class="fix__content">
-        <div class="row clearfix">
-          <div class="col-md-2 hidden-sm hidden-xs">
-            <a href="http://maxtv.co.il">
-              <div class="fix__logo">
-                <img class="fix__logo" src="img/fix_logo.png" alt="MAX TV">
-                <h1 class="fix__title">MAX TV</h1>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-10 col-sm-12">
-            <div class="fix__nav-wrapper">
-              <nav class="fix__nav">
-                <a href="#advantages">Преимущества</a>
-                <a href="#tariff">Тарифы</a>
-                <a href="#equipment">Оборудование</a>
-                <a href="#principle">Подключение</a>
-                <!--<a href="#comments">Отзывы</a>-->
-                <a href="#contacts">Контакты</a>
-              </nav>
-              <div class="fix__progress"></div>
-            </div>
-            <div class="fix__feed-back">
-              <a class="popup_modal js_value fix__btn" data-form="Кнопка Бесплатный звонок Динамическая" href="#mod_pay" onClick="ga('send', 'event', 'Knopka1', 'ObratnayaSvyz');">Оформить заявку</a>
-              <a class="popup_modal fix_tech js_value fix__btn" data-form="Кнопка Техническа поддержка Динамическая" href="#tech_form">Тех-поддержка</a>
-            </div>
-            <div class="fix__phone">
-              <img src="img/svg_elem/phone_ico.svg" alt="phone"><a href="tel:+3801234566">+38 (012) 34 566</a>
-            </div>
-            <div class="mob_btn fix__mob-btn">
-              <div class="btn_line"></div>
-            </div>
 
+    <!-- fixed header -->
+    <header class="fix">
+      <div class="fix__wrap">
+        
+        <!-- new year garland -->
+        <ul class="lightrope">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+        </ul>
+        <div class="fix__content">
+          <div class="row clearfix">
+            <div class="col-md-2 hidden-sm hidden-xs">
+              <a href="http://maxtv.co.il">
+                <div class="fix__logo">
+                  <img class="fix__logo" src="img/fix_logo.png" alt="MAX TV">
+                  <h1 class="fix__title">MAX TV</h1>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-10 col-sm-12">
+              <div class="fix__nav-wrapper">
+                <nav class="fix__nav">
+                  <a href="#advantages">Преимущества</a>
+                  <a href="#tariff">Тарифы</a>
+                  <a href="#equipment">Оборудование</a>
+                  <a href="#principle">Подключение</a>
+                  <!--<a href="#comments">Отзывы</a>-->
+                  <a href="#contacts">Контакты</a>
+                </nav>
+                <div class="fix__progress"></div>
+              </div>
+              <div class="fix__feed-back">
+                <a class="popup_modal js_value fix__btn" data-form="Кнопка Бесплатный звонок Динамическая" href="#mod_pay" onClick="ga('send', 'event', 'Knopka1', 'ObratnayaSvyz');">Оформить заявку</a>
+                <a class="popup_modal fix_tech js_value fix__btn" data-form="Кнопка Техническа поддержка Динамическая" href="#tech_form">Тех-поддержка</a>
+              </div>
+              <div class="fix__phone">
+                <img src="img/svg_elem/phone_ico.svg" alt="phone"><a href="tel:+3801234566">+38 (012) 34 566</a>
+              </div>
+              <div class="mob_btn fix__mob-btn">
+                <div class="btn_line"></div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <!--main header-->
-<header class="head">
+
+    <!-- Main header -->
+    <header class="head">
       <div class="desctop_nav">
         <div class="container">
           <div class="row">
@@ -217,17 +270,67 @@
         </nav>
       </div>
       <div class="head__cont-wrapper">
+        
+        <!-- new year garland -->
+        <ul class="lightrope">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+        </ul>
+        
         <div class="head__content">
-        <nav class="mobile_mnu dt_mnu">
-          <a href="#advantages"><span>Преимущества</span></a>
-          <a href="#tariff"><span>Тарифы</span></a>
-          <a href="#equipment"><span>Оборудование</span></a>
-          <a href="#principle"><span>Подключение</span></a>
-          <!--<a href="#comments"><span>Отзывы</span></a>-->
-          <a href="#contacts"><span>Контакты</span></a>
-          <a class="popup_modal js_value" data-form="Кнопка Техническа поддержка Мобильное меню в шапке" href="#tech_form">Тех-поддержка</a>
-        </nav>
+
+          <nav class="mobile_mnu dt_mnu">
+            <a href="#advantages"><span>Преимущества</span></a>
+            <a href="#tariff"><span>Тарифы</span></a>
+            <a href="#equipment"><span>Оборудование</span></a>
+            <a href="#principle"><span>Подключение</span></a>
+            <!--<a href="#comments"><span>Отзывы</span></a>-->
+            <a href="#contacts"><span>Контакты</span></a>
+            <a class="popup_modal js_value" data-form="Кнопка Техническа поддержка Мобильное меню в шапке" href="#tech_form">Тех-поддержка</a>
+          </nav>
+
         <div class="top_shadow"></div>
+
         <div class="head__form">
           <h3>Более 600 каналов</h3>
           <p>Теперь никакого уныния и плохого настроения!
@@ -256,16 +359,19 @@
             </div>
           </form>
         </div>
+
         <div class="video_intv">
           <div class="video_inner">
             <img class="hidden-sm hidden-xs" src="img/giphy.gif" alt="loading gif...">
           </div>
         </div>
+
       </div>
       </div>
     </header>
-    <!--Our advantages-->
-<section id="advantages" class="benefit">
+
+    <!-- Our advantages -->
+    <section id="advantages" class="benefit">
       <h3>Ключевые преимущества</h3>
       <div class="container">
         <div class="row">
@@ -315,8 +421,50 @@
         </div>
       </div>
     </section>
-    <!--Timer 1-->
-<section class="hurry">
+    
+    <!-- new year section -->
+    <section class="new_year">
+      <div class="container">
+
+        <h3 class="new_year__title">
+           Самое время задуматься<br>
+              о новом TV!
+        </h3>
+
+        <div class="new_year__content">
+
+          <div class="new_year__content--title">
+            АКЦИЯ! Порадуй себя и свою семью! 
+          </div>
+
+          <div class="new_year__content--descr">
+
+            <p>
+              Телевизор NEON с диагональю 55" 4K всего за <span>2882₪</span>, вместо <span>3223₪</span>!<br> 
+              Так же в наличии телевизоры с диагональю (32",43",50",65").
+            </p>
+
+            <p class="md">
+              Закажи прямо сейчас и получи подключенное SMART TV<br>
+              на 1.5 года, соверешенно БЕСПЛАТНО!
+            </p>
+
+            <p>
+              Так же возможна рассрочка на 18 платежей по 160 шекелей в месяц.
+            </p>
+
+          </div>
+          <p>Бесплатная доставка по всему Израилю.</p>
+
+          <a class="new_year__button js_value popup_modal" href="#modal" data-form="Новогодняя секция">подать заявку</a>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- hurry section timer 1 -->
+    <section class="hurry">
       <h3>Поспешите!</h3>
       <div class="counter_wrap">
         <div class="par_ax pr_01"></div>
@@ -369,8 +517,9 @@
         </div>
       </div>
     </section>
-    <!--Tariff-->
-<section id="tariff" class="tariff_plans">
+
+    <!-- Tariff -->
+    <section id="tariff" class="tariff_plans">
       <h3>НАШ ТАРИФНЫЙ ПЛАН</h3>
       <div class="container">
         <div class="row">
@@ -421,8 +570,9 @@
         </div>
       </div>
     </section>
-    <!--Equipment-->
-<section id="equipment" class="equipment">
+
+    <!-- Equipment -->
+    <section id="equipment" class="equipment">
       <h3>лучшее оборудование</h3>
       <div class="box_tv">
         <div class="container">
@@ -494,8 +644,9 @@
         </div>
       </div>
     </section>
-    <!--Before-After-->
-<section class="before">
+
+    <!-- Before-After -->
+    <section class="before">
       <div class="tv_difference">
         <div class="wrapper_tv">
           <div class="difference competitor">Картинка
@@ -519,133 +670,135 @@
         <a href="#modal" class="cont_btn popup_modal js_value red_button" data-form="Блок оборудование" onClick="ga('send', 'event', 'Knopka4', 'PodatZayvku2');">Подать заявку</a>
       </div>
     </section>
-    <!--Change tariff-->
-<section id="principle" class="come">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-    <div class="come__title">
-    <h3>Перейти к нам легко</h3>
-      <p>Мы понимаем как трудно найти качественного провайдера</p>
-    </div>
-  </div>
-  </div>
-  <div class="come__center">
-    <div class="come__center_content">
-      <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="84px" height="14px">
-        <path fill-rule="evenodd"  stroke="rgb(255, 223, 84)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.534,1.878 C5.975,1.878 5.975,9.621 10.415,9.621 C14.856,9.621 14.856,1.878 19.297,1.878 C23.730,1.878 23.730,9.621 28.164,9.621 C32.603,9.621 32.603,1.878 37.043,1.878 C41.487,1.878 41.487,9.621 45.931,9.621 C50.376,9.621 50.376,1.878 54.821,1.878 C59.268,1.878 59.268,9.621 63.714,9.621 C68.167,9.621 68.167,1.878 72.620,1.878 C77.074,1.878 77.074,9.621 81.527,9.621 "/>
-      </svg>
-      <p>Вы проделали большой путь и почти у цели!</p>
-      <p class="yell"><span>Даже если Вы уже подключены</span> - <br>это не проблема</p>
-      <p class="subp">
-        Вам осталось просто оставить Ваши <br>
-        данные и мы все сделаем за Вас!
-        <img src="img/icons/mini_arr_rotate.png" alt="arrow" class="animated bounce">
-      </p>
-       <a href="#change-tariff-modal" class="red_button popup_modal js_value come__button" data-form="Блок Перейти к нам легко" onclick="ga('send', 'event', 'Knopka', 'OformitZayvku');">Оформить заявку</a>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="come__grid">
-        <svg version="1.1" id="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 866 264.3" style="enable-background:new 0 0 866 264.3;" xml:space="preserve">
-        <style type="text/css">
-          .st0{fill:none;stroke:#656D89;stroke-linecap:round;stroke-linejoin:round;}
-          .st1{fill:none;stroke:#656D89;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5.0044,6.0053;}
 
-          .st2{fill:none;stroke:#FFDF54;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0,4;}
-        </style>
-        <g id="path_1_">
-          <g>
-            <g>
-              <path class="st0" d="M0.5,1c0.2-0.3,1.1-0.5,2.4-0.5"/>
-              <path class="st1" d="M8.8,1.2C23.6,3.9,54.6,13.7,75.5,28c20.4,14,19.5,22.9,12,31s8.8,41.7,18,28c11.9-17.7-37-15.1-40,5
-                s41.5,53.9,66,59c21.4,5,50.1,25.3,73,32c24.2,7.1,49.4,4.1,41-7c-10.2-13.6-34.8,2.4-16,20c4.8,4.5,65.8,27.3,77,30
-                c108.7,66.3,187.1,27.7,206.4,16"/>
-              <path class="st0" d="M515.4,240.4c1.4-0.9,2.1-1.4,2.1-1.4"/>
-            </g>
-          </g>
-        </g>
-        <path class="st2" d="M528.5,231.5c0,0,30.3-22.3,75-29c38.3-5.7,109,45,109,45l153-76"/>
-      </svg>
+    <!-- Change tariff -->
+    <section id="principle" class="come">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__first js_one square pull-right">
-              <div class="cube_cean glass js_cube"><span>СТАРТ</span></div>
-              <div class="come__shadow js_shadows"></div>
-              <p>
-                Вы начали поиск<br>
-                провайдера
-              </p>
-            </div>
+          <div class="col-xs-12">
+          <div class="come__title">
+          <h3>Перейти к нам легко</h3>
+            <p>Мы понимаем как трудно найти качественного провайдера</p>
           </div>
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__second js_one square pull-left">
-              <div class="cube_cean libra js_cube"></div>
-              <div class="come__shadow js_shadows"></div>
-              <p>
-                Вы сравнили все<br>
-                предложения
-              </p>
+        </div>
+        </div>
+        <div class="come__center">
+          <div class="come__center_content">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="84px" height="14px">
+              <path fill-rule="evenodd"  stroke="rgb(255, 223, 84)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.534,1.878 C5.975,1.878 5.975,9.621 10.415,9.621 C14.856,9.621 14.856,1.878 19.297,1.878 C23.730,1.878 23.730,9.621 28.164,9.621 C32.603,9.621 32.603,1.878 37.043,1.878 C41.487,1.878 41.487,9.621 45.931,9.621 C50.376,9.621 50.376,1.878 54.821,1.878 C59.268,1.878 59.268,9.621 63.714,9.621 C68.167,9.621 68.167,1.878 72.620,1.878 C77.074,1.878 77.074,9.621 81.527,9.621 "/>
+            </svg>
+            <p>Вы проделали большой путь и почти у цели!</p>
+            <p class="yell"><span>Даже если Вы уже подключены</span> - <br>это не проблема</p>
+            <p class="subp">
+              Вам осталось просто оставить Ваши <br>
+              данные и мы все сделаем за Вас!
+              <img src="img/icons/mini_arr_rotate.png" alt="arrow" class="animated bounce">
+            </p>
+             <a href="#change-tariff-modal" class="red_button popup_modal js_value come__button" data-form="Блок Перейти к нам легко" onclick="ga('send', 'event', 'Knopka', 'OformitZayvku');">Оформить заявку</a>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="come__grid">
+              <svg version="1.1" id="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 866 264.3" style="enable-background:new 0 0 866 264.3;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:none;stroke:#656D89;stroke-linecap:round;stroke-linejoin:round;}
+                .st1{fill:none;stroke:#656D89;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5.0044,6.0053;}
+
+                .st2{fill:none;stroke:#FFDF54;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0,4;}
+              </style>
+              <g id="path_1_">
+                <g>
+                  <g>
+                    <path class="st0" d="M0.5,1c0.2-0.3,1.1-0.5,2.4-0.5"/>
+                    <path class="st1" d="M8.8,1.2C23.6,3.9,54.6,13.7,75.5,28c20.4,14,19.5,22.9,12,31s8.8,41.7,18,28c11.9-17.7-37-15.1-40,5
+                      s41.5,53.9,66,59c21.4,5,50.1,25.3,73,32c24.2,7.1,49.4,4.1,41-7c-10.2-13.6-34.8,2.4-16,20c4.8,4.5,65.8,27.3,77,30
+                      c108.7,66.3,187.1,27.7,206.4,16"/>
+                    <path class="st0" d="M515.4,240.4c1.4-0.9,2.1-1.4,2.1-1.4"/>
+                  </g>
+                </g>
+              </g>
+              <path class="st2" d="M528.5,231.5c0,0,30.3-22.3,75-29c38.3-5.7,109,45,109,45l153-76"/>
+            </svg>
+              <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__first js_one square pull-right">
+                    <div class="cube_cean glass js_cube"><span>СТАРТ</span></div>
+                    <div class="come__shadow js_shadows"></div>
+                    <p>
+                      Вы начали поиск<br>
+                      провайдера
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__second js_one square pull-left">
+                    <div class="cube_cean libra js_cube"></div>
+                    <div class="come__shadow js_shadows"></div>
+                    <p>
+                      Вы сравнили все<br>
+                      предложения
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__third js_one square pull-left">
+                    <div class="cube_cean world_esco js_cube"></div>
+                    <div class="come__shadow js_shadows"></div>
+                    <p>
+                      Вы сделали <br>
+                      свой выбор
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__four js_two square pull-left">
+                    <div class="cube_yellow call_men js_cube"></div>
+                    <div class="come__shadow come__sh_yell js_shadows"></div>
+                    <p>
+                      Заполнение <br>
+                      данных
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__five js_tree square">
+                    <div class="cube_gray call_center js_cube"></div>
+                    <div class="come__shadow js_shadows"></div>
+                    <p>
+                      Общение с <br>
+                      менеджером
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="come__six js_four square">
+                    <div class="cube_gray get_tv js_cube"><span>ФИНИШ</span></div>
+                    <div class="come__shadow js_shadows"></div>
+                    <p>
+                      Вы смотрите <br>
+                      Ваше IP TV
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__third js_one square pull-left">
-              <div class="cube_cean world_esco js_cube"></div>
-              <div class="come__shadow js_shadows"></div>
-              <p>
-                Вы сделали <br>
-                свой выбор
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__four js_two square pull-left">
-              <div class="cube_yellow call_men js_cube"></div>
-              <div class="come__shadow come__sh_yell js_shadows"></div>
-              <p>
-                Заполнение <br>
-                данных
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__five js_tree square">
-              <div class="cube_gray call_center js_cube"></div>
-              <div class="come__shadow js_shadows"></div>
-              <p>
-                Общение с <br>
-                менеджером
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-            <div class="come__six js_four square">
-              <div class="cube_gray get_tv js_cube"><span>ФИНИШ</span></div>
-              <div class="come__shadow js_shadows"></div>
-              <p>
-                Вы смотрите <br>
-                Ваше IP TV
-              </p>
+            <div class="come__decr">
+              <div class="cube_cean cube_decr"><span>- Пройденные этапы</span></div>
+              <div class="cube_yellow cube_decr_yell"><span>- Вы здесь</span></div>
+              <div class="cube_gray cube_decr"><span>- Осталось</span></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="come__decr">
-        <div class="cube_cean cube_decr"><span>- Пройденные этапы</span></div>
-        <div class="cube_yellow cube_decr_yell"><span>- Вы здесь</span></div>
-        <div class="cube_gray cube_decr"><span>- Осталось</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-    <!--World company-->
-<section class="world">
+    </section>
+
+    <!-- World company -->
+    <section class="world">
       <div class="world__waves wave_01"></div>
       <div class="world__waves wave_02"></div>
       <div class="world__content">
@@ -700,8 +853,9 @@
         <div class="world__circle world__circle__three"></div>
       </div>
     </section>
-    <!--Timer 2-->
-<section id="time" class="time">
+
+    <!-- Timer 2 -->
+    <section id="time" class="time">
       <div class="time__wrap">
         <div class="container">
           <div class="row">
@@ -727,12 +881,17 @@
                 </div>
               </div>
               <div class="time__text">
-                <h6>Раз вы зашли так далеко, мы готовы сделать Вам <span>скидку</span>!</h6>
-                <p>
+                <h6>
+                  Новый год не за горами!<br>
+                  Покупай одну приставку за 99, две приставки за 169 и получи премиум пакеты спорт, фильмы, 
+                  каналы для взрослых, совершенно бесплатно.<br>
+                  Акция скоро закончится поспеши!
+                </h6>
+                <!--<p>
                   <br><b>1</b> приставка <b>110</b> шекелей в месяц
                   <br><b>2</b> приставки <b>179</b> шекелей в месяц
                   <br><b>3</b> приставки <b>229</b> шекелей в месяц</p>
-                <p>
+                <p> -->
                   <br><b>Спеши! Предложение ограничено по времени!</b>
                 </p>
                 <a href="#modal" class="cont_btn red_button popup_modal js_value" data-form="Некогда думать Таймер№2" onClick="ga('send', 'event', 'Knopka5', 'PodatZayvku3');">ПОДАТЬ ЗАЯВКУ</a>
@@ -742,8 +901,9 @@
         </div>
       </div>
     </section>
-    <!--Footer & map-->
-<footer class="footer">
+
+    <!-- Footer & map -->
+    <footer class="footer">
       <div class="map_wrapper">
         <div class="blurel blur_01"></div>
         <div class="blurel blur_02"></div>
@@ -767,9 +927,12 @@
         </div>
       </div>
     </footer>
-  <div id="contacts"></div>
-    <!--Modal def-->
-<div id="modal" class="modal zoom-anim-dialog mfp-hide">
+  
+    <!-- scroll to contact -->
+    <div id="contacts"></div>
+
+    <!-- Modal default -->
+    <div id="modal" class="modal zoom-anim-dialog mfp-hide">
       <div class="modal__left">
         <h5>Оставьте ваши данные</h5>
         <p>Наш менеджер свяжется с вами в ближайшее время</p>
@@ -803,8 +966,9 @@
         <button class="modal__closer js_close_modal"></button>
       </div>
     </div>
-    <!--Modal call-back-->
-<div id="call_back" class="modal zoom-anim-dialog mfp-hide callme">
+
+    <!-- Modal call-back -->
+    <div id="call_back" class="modal zoom-anim-dialog mfp-hide callme">
       <div class="callme__title"><span class="blk">У Вас есть вопросы?</span><br>
         <img src="img/icons/arr_call_form.png" alt="arrow"><span class="blu">Мы поможем</span>
       </div>
@@ -828,92 +992,94 @@
       <div class="free_c"><sup>*</sup>Это бесплатно</div>
       <button class="modal__closer closer_change js_close_modal"></button>
     </div>
-    <!--Modal change tariff-->
-<div id="change-tariff-modal" class="unique change__mod modal zoom-anim-dialog mfp-hide" >
-  <div class="unique__wrapper">
-    <div class="unique__form">
-      <h6>
-        Оформление заказа
-        <span>последний шаг</span>
-      </h6>
 
-      <p>
-        <span>Заполните</span> форму и мы <br>
-        с Вами свяжемся
-      </p>
-      <form class="js_send_form">
-        <!-- Hidden Required Fields -->
-        <input type="hidden" name="project_name" value="Лендинг MAX TV">
-        <input type="hidden" name="admin_email" value="info@maxtv.co.il">
-        <input type="hidden" name="form_subject" value="модальное окно">
-        <input class="form_id" type="hidden" name="Кнопка:">
-        <!-- END Hidden Required Fields -->
-        <label>
-          <span class="ie_fo_dark">Ваше имя</span>
-          <input class="unique__name" name="Имя" type="text" required placeholder="Ваше имя">
-        </label>
-        <label>
-          <span class="ie_fo_dark">Телефон</span>
-          <input class="unique__phone js_mask" name="Телефон" type="tel" required placeholder="Ваш телефон">
-        </label>
-        <button onClick="ga('send', 'event', 'Knopka33', 'Otpravit33');" class="unique-btn">Отправить</button>
-      </form>
-    </div>
-    <div class="unique__change">
-      <div class="unique__first unique__item">
-        <div class="cube_cean unique__img glass js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Вы начали поиск<br>
-          провайдера
-        </p>
-      </div>
-      <div class="unique__second unique__item">
-        <div class="cube_cean unique__img libra js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Вы сравнили все<br>
-          предложения
-        </p>
-      </div>
-      <div class="unique__third unique__item">
-        <div class="cube_cean unique__img world_esco js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Вы сделали<br>
-          свой выбор
-        </p>
-      </div>
-      <div class="unique__four unique__item">
-        <div class="cube_yellow unique__img call_men js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Заполнение<br>
-          <span>данных</span>
-        </p>
-      </div>
-      <div class="unique__five unique__item">
-        <div class="cube_gray unique__img call_center js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Общение с менеджером
-        </p>
-      </div>
-      <div class="unique__six unique__item">
-        <div class="cube_gray unique__img get_tv js_anim_platform"></div>
-        <div class="come__shadow js_anim_shadow"></div>
-        <p>
-          Вы смотрите<br>
-          Ваше IP TV
-        </p>
-      </div>
+    <!-- Modal change tariff -->
+    <div id="change-tariff-modal" class="unique change__mod modal zoom-anim-dialog mfp-hide" >
+      <div class="unique__wrapper">
+        <div class="unique__form">
+          <h6>
+            Оформление заказа
+            <span>последний шаг</span>
+          </h6>
 
+          <p>
+            <span>Заполните</span> форму и мы <br>
+            с Вами свяжемся
+          </p>
+          <form class="js_send_form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Лендинг MAX TV">
+            <input type="hidden" name="admin_email" value="info@maxtv.co.il">
+            <input type="hidden" name="form_subject" value="модальное окно">
+            <input class="form_id" type="hidden" name="Кнопка:">
+            <!-- END Hidden Required Fields -->
+            <label>
+              <span class="ie_fo_dark">Ваше имя</span>
+              <input class="unique__name" name="Имя" type="text" required placeholder="Ваше имя">
+            </label>
+            <label>
+              <span class="ie_fo_dark">Телефон</span>
+              <input class="unique__phone js_mask" name="Телефон" type="tel" required placeholder="Ваш телефон">
+            </label>
+            <button onClick="ga('send', 'event', 'Knopka33', 'Otpravit33');" class="unique-btn">Отправить</button>
+          </form>
+        </div>
+        <div class="unique__change">
+          <div class="unique__first unique__item">
+            <div class="cube_cean unique__img glass js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Вы начали поиск<br>
+              провайдера
+            </p>
+          </div>
+          <div class="unique__second unique__item">
+            <div class="cube_cean unique__img libra js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Вы сравнили все<br>
+              предложения
+            </p>
+          </div>
+          <div class="unique__third unique__item">
+            <div class="cube_cean unique__img world_esco js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Вы сделали<br>
+              свой выбор
+            </p>
+          </div>
+          <div class="unique__four unique__item">
+            <div class="cube_yellow unique__img call_men js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Заполнение<br>
+              <span>данных</span>
+            </p>
+          </div>
+          <div class="unique__five unique__item">
+            <div class="cube_gray unique__img call_center js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Общение с менеджером
+            </p>
+          </div>
+          <div class="unique__six unique__item">
+            <div class="cube_gray unique__img get_tv js_anim_platform"></div>
+            <div class="come__shadow js_anim_shadow"></div>
+            <p>
+              Вы смотрите<br>
+              Ваше IP TV
+            </p>
+          </div>
+
+        </div>
+        <button class="modal__closer unique_mod_closer js_close_modal"></button>
+      </div>
     </div>
-    <button class="modal__closer unique_mod_closer js_close_modal"></button>
-  </div>
-</div>
-    <!--Modal unique tariff change-->
-<div id="unique_form" class="unique zoom-anim-dialog mfp-hide">
+
+    <!-- Modal unique tariff change -->
+    <div id="unique_form" class="unique zoom-anim-dialog mfp-hide">
       <div class="unique__wrapper">
         <div class="unique__form">
           <h6>
@@ -960,45 +1126,47 @@
         </div>
         <button class="modal__closer unique_closer js_close_modal"></button>
       </div>
-</div>
-  <!--Modal Technical -->
-<div id="tech_form" class="techno zoom-anim-dialog mfp-hide">
-  <div class="techno__wrap">
-  <div class="unique__form tech_add">
-    <h6>
-      Тех-поддержка
-    </h6>
-    <form class="js_send_form">
-      <!-- Hidden Required Fields -->
-      <input type="hidden" name="project_name" value="Лендинг MAX TV">
-      <input type="hidden" name="admin_email" value="info@maxtv.co.il">
-      <input type="hidden" name="form_subject" value="Тех-поддержка">
-      <input class="form_id" type="hidden" name="Кнопка:">
-      <!-- END Hidden Required Fields -->
-      <label>
-        <span class="ie_fo_dark">Ваше имя</span>
-        <input class="unique__name" name="Имя" type="text" required placeholder="Ваше имя">
-      </label>
-      <label>
-        <span class="ie_fo_dark">Телефон</span>
-        <input class="unique__phone js_mask" name="Телефон" type="tel" required placeholder="Ваш телефон">
-      </label>
-      <label>
-        <span class="name_def">Ваш комметарий</span>
-        <textarea title="Ваш комметарий" name="Комментарий" placeholder="Ваш комментарий"></textarea>
-      </label>
-      <button onClick="ga('send', 'event', 'KnopkaTeh2', 'Podderjka2');" class="unique-btn">Отправить</button>
-      <div class="techno__graph">
-        <b>Напоминаем!</b> Тех поддержка работает <br>
-        с Воскресенье по Пятницу с 9:00 до 21:00
+    </div>
+
+    <!-- Modal Technical -->
+    <div id="tech_form" class="techno zoom-anim-dialog mfp-hide">
+      <div class="techno__wrap">
+      <div class="unique__form tech_add">
+        <h6>
+          Тех-поддержка
+        </h6>
+        <form class="js_send_form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Лендинг MAX TV">
+          <input type="hidden" name="admin_email" value="info@maxtv.co.il">
+          <input type="hidden" name="form_subject" value="Тех-поддержка">
+          <input class="form_id" type="hidden" name="Кнопка:">
+          <!-- END Hidden Required Fields -->
+          <label>
+            <span class="ie_fo_dark">Ваше имя</span>
+            <input class="unique__name" name="Имя" type="text" required placeholder="Ваше имя">
+          </label>
+          <label>
+            <span class="ie_fo_dark">Телефон</span>
+            <input class="unique__phone js_mask" name="Телефон" type="tel" required placeholder="Ваш телефон">
+          </label>
+          <label>
+            <span class="name_def">Ваш комметарий</span>
+            <textarea title="Ваш комметарий" name="Комментарий" placeholder="Ваш комментарий"></textarea>
+          </label>
+          <button onClick="ga('send', 'event', 'KnopkaTeh2', 'Podderjka2');" class="unique-btn">Отправить</button>
+          <div class="techno__graph">
+            <b>Напоминаем!</b> Тех поддержка работает <br>
+            с Воскресенье по Пятницу с 9:00 до 21:00
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-  </div>
-  <div class="modal__closer close_tech js_close_modal"></div>
-</div>
+      </div>
+      <div class="modal__closer close_tech js_close_modal"></div>
+    </div>
+
     <!--Modal unique timeline-->
-<div class="quest clearfix">
+    <div class="quest clearfix">
       <div class="quest__wrap">
         <div class="quest__title clearfix">
           <div class="quest__title-cont">
@@ -1057,162 +1225,163 @@
         </div>
       </div>
     </div>
-  <!--Modal bank-->
-<div id="mod_pay" class="mod zoom-anim-dialog mfp-hide">
-  <form id="this_form" class="js_send_form">
-    <input type="hidden" name="project_name" value="MAX TV">
-    <input type="hidden" name="admin_email" value="escotv.lead@gmail.com">
-    <input type="hidden" name="form_subject" value="ЗАЯВКА С САЙТА - ЗАКЛЮЧЕНИЕ ДОГОВОРА">
-    <div class="mod__slider js_mod_slider">
-      <div class="mod__step">
-        <div class="mod__first-step">
-          <div class="mod__title">
-            <div class="mod__title-wrap">
-              Оформление заявки<br>
-              <span>первый шаг</span>
+
+    <!--Modal bank-->
+    <div id="mod_pay" class="mod zoom-anim-dialog mfp-hide">
+      <form id="this_form" class="js_send_form">
+        <input type="hidden" name="project_name" value="MAX TV">
+        <input type="hidden" name="admin_email" value="escotv.lead@gmail.com">
+        <input type="hidden" name="form_subject" value="ЗАЯВКА С САЙТА - ЗАКЛЮЧЕНИЕ ДОГОВОРА">
+        <div class="mod__slider js_mod_slider">
+          <div class="mod__step">
+            <div class="mod__first-step">
+              <div class="mod__title">
+                <div class="mod__title-wrap">
+                  Оформление заявки<br>
+                  <span>первый шаг</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>
+                    <img src="img/svg_elem/name.svg" alt="icon">
+                    <input data-slide="0" name="Имя пользователя" form="this_form" class="mod__name" type="text" placeholder="Имя">
+                  </label>
+                  <label>
+                    <input data-slide="0" name="Фамилия польхователя" form="this_form" class="mod__surname" type="text" placeholder="Фамилия">
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label>
+                    <img src="img/svg_elem/phone.svg" alt="icon">
+                    <input data-slide="0" name="Номер телефона" class="js_mask" form="this_form" type="tel" placeholder="Номер телефона">
+                  </label>
+                  <label>
+                    <input data-slide="0" name="E-mail" class="js_mail_mask" form="this_form" type="email" placeholder="E-mail">
+                  </label>
+                </div>
+              </div>
+              <p>заполните все поля</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <label>
-                <img src="img/svg_elem/name.svg" alt="icon">
-                <input data-slide="0" name="Имя пользователя" form="this_form" class="mod__name" type="text" placeholder="Имя">
-              </label>
-              <label>
-                <input data-slide="0" name="Фамилия польхователя" form="this_form" class="mod__surname" type="text" placeholder="Фамилия">
-              </label>
-            </div>
-            <div class="col-sm-6">
-              <label>
-                <img src="img/svg_elem/phone.svg" alt="icon">
-                <input data-slide="0" name="Номер телефона" class="js_mask" form="this_form" type="tel" placeholder="Номер телефона">
-              </label>
-              <label>
-                <input data-slide="0" name="E-mail" class="js_mail_mask" form="this_form" type="email" placeholder="E-mail">
-              </label>
+          <div class="mod__step">
+            <div class="mod__second-step">
+              <div class="mod__title">
+                <div class="mod__title-wrap">
+                  Оформление заявки<br>
+                  <span>второй шаг</span>
+                </div>
+              </div>
+              <div class="mod__place">
+                <label>
+                  <img src="img/svg_elem/place_ico.svg" alt="icon">
+                  <input data-slide="1" name="Город" type="text" placeholder="Город" form="this_form">
+                </label>
+                <label><input data-slide="1" name="Улица" type="text" placeholder="Улица" form="this_form"></label>
+              </div>
+              <div class="mod__calendar">
+                <label>
+                  <span>Дата текущего  подключения</span>
+                  <input data-slide="1" name="Дата текущего  подключения" type="text" form="this_form" class="datepicker-here" data-position="top center" placeholder="календарь">
+                </label>
+              </div>
+              <div class="mod__provider">
+                <div class="mod__provider--title">
+                    Текущий<br>
+                    провайдер:
+                </div>
+                <div class="mod__providers">
+                  <label>
+                    <span>Hot</span>
+                    <input type="radio" name="Провайдер" value="Hot">
+                  </label>
+                  <label>
+                    <span>Yes</span>
+                    <input type="radio" name="Провайдер" value="Yes">
+                  </label>
+                  <label>
+                    <span>Другое</span>
+                    <input type="radio" name="Провайдер" value="Другое">
+                  </label>
+                  <label>
+                    <span>не подключен</span>
+                    <input type="radio" name="Провайдер" value="не подключен">
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-          <p>заполните все поля</p>
+          <div class="mod__step">
+            <div class="mod__last-step">
+              <div class="mod__title">
+                <div class="mod__title-wrap">
+                  Оформление заявки<br>
+                  <span>последний шаг</span>
+                </div>
+              </div>
+              <div class="mod__pay_type">
+                <label>
+                  Оплата наличными
+                  <input data-slide="2" class="js_hide_form" type="radio" name="Оплата" value="Оплата наличными">
+                </label>
+                <label>
+                  Карта
+                  <input data-slide="2" class="js_show_fields" type="radio"  name="Оплата" value="Карта" checked>
+                </label>
+                <label>
+                  Чеки
+                  <input data-slide="2" class="js_hide_form" type="radio" name="Оплата" value="Чеки">
+                </label>
+                <label>
+                  <span>Кол-во декодеров:</span>
+                  <input class="decod_1" name="Декодеров" type="radio" value="1" checked>
+                  <input class="decod_2" name="Декодеров" type="radio" value="2">
+                  <input class="decod_3" name="Декодеров" type="radio" value="3">
+                </label>
+              </div>
+              <div class="mod__cart--one">
+                <label class="js_hide_input"><input data-slide="2" class="js_mask_card" type="tel" name="Номер карты" placeholder="Номер карты"></label>
+                <label class="js_hide_input"><input data-slide="2" type="text" name="Держатель карты" placeholder="Держатель карты"></label>
+              </div>
+              <div class="mod__cart--two">
+                <label class="js_hide_input"><input data-slide="2" class="js_cvv_mask" name="CVV" type="text" placeholder="CVV"></label>
+                <label class="js_hide_input"><input data-slide="2" name="Дата карты" type="text" placeholder="мм/гг" class="datepicker-here" data-view="months" data-min-view="months" data-date-format="mm / yy" /></label>
+                <label><input data-slide="2" class="js_zeut_mask" name="теудат зеут" type="text" placeholder="ТЕУДАТ ЗЕУТ"></label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="mod__step">
-        <div class="mod__second-step">
-          <div class="mod__title">
-            <div class="mod__title-wrap">
-              Оформление заявки<br>
-              <span>второй шаг</span>
-            </div>
-          </div>
-          <div class="mod__place">
-            <label>
-              <img src="img/svg_elem/place_ico.svg" alt="icon">
-              <input data-slide="1" name="Город" type="text" placeholder="Город" form="this_form">
-            </label>
-            <label><input data-slide="1" name="Улица" type="text" placeholder="Улица" form="this_form"></label>
-          </div>
-          <div class="mod__calendar">
-            <label>
-              <span>Дата текущего  подключения</span>
-              <input data-slide="1" name="Дата текущего  подключения" type="text" form="this_form" class="datepicker-here" data-position="top center" placeholder="календарь">
-            </label>
-          </div>
-          <div class="mod__provider">
-            <div class="mod__provider--title">
-                Текущий<br>
-                провайдер:
-            </div>
-            <div class="mod__providers">
-              <label>
-                <span>Hot</span>
-                <input type="radio" name="Провайдер" value="Hot">
-              </label>
-              <label>
-                <span>Yes</span>
-                <input type="radio" name="Провайдер" value="Yes">
-              </label>
-              <label>
-                <span>Другое</span>
-                <input type="radio" name="Провайдер" value="Другое">
-              </label>
-              <label>
-                <span>не подключен</span>
-                <input type="radio" name="Провайдер" value="не подключен">
-              </label>
-            </div>
+        <div class="mod__footer">
+          <div class="mod__buttons">
+            <div class="mod__prev mod__btn">назад</div>
+            <div class="mod__next mod__btn" onClick="ga('send', 'event', 'Knopka1', 'OformlenieZayvki1');">далее</div>
+            <button class="mod__btn mod_send" onClick="ga('send', 'event', 'Knopka3', 'OformlenieZayvki3');">отправить</button>
           </div>
         </div>
-      </div>
-      <div class="mod__step">
-        <div class="mod__last-step">
-          <div class="mod__title">
-            <div class="mod__title-wrap">
-              Оформление заявки<br>
-              <span>последний шаг</span>
-            </div>
-          </div>
-          <div class="mod__pay_type">
-            <label>
-              Оплата наличными
-              <input data-slide="2" class="js_hide_form" type="radio" name="Оплата" value="Оплата наличными">
-            </label>
-            <label>
-              Карта
-              <input data-slide="2" class="js_show_fields" type="radio"  name="Оплата" value="Карта" checked>
-            </label>
-            <label>
-              Чеки
-              <input data-slide="2" class="js_hide_form" type="radio" name="Оплата" value="Чеки">
-            </label>
-            <label>
-              <span>Кол-во декодеров:</span>
-              <input class="decod_1" name="Декодеров" type="radio" value="1" checked>
-              <input class="decod_2" name="Декодеров" type="radio" value="2">
-              <input class="decod_3" name="Декодеров" type="radio" value="3">
-            </label>
-          </div>
-          <div class="mod__cart--one">
-            <label class="js_hide_input"><input data-slide="2" class="js_mask_card" type="tel" name="Номер карты" placeholder="Номер карты"></label>
-            <label class="js_hide_input"><input data-slide="2" type="text" name="Держатель карты" placeholder="Держатель карты"></label>
-          </div>
-          <div class="mod__cart--two">
-            <label class="js_hide_input"><input data-slide="2" class="js_cvv_mask" name="CVV" type="text" placeholder="CVV"></label>
-            <label class="js_hide_input"><input data-slide="2" name="Дата карты" type="text" placeholder="мм/гг" class="datepicker-here" data-view="months" data-min-view="months" data-date-format="mm / yy" /></label>
-            <label><input data-slide="2" class="js_zeut_mask" name="теудат зеут" type="text" placeholder="ТЕУДАТ ЗЕУТ"></label>
-          </div>
-        </div>
-      </div>
+        <div class="modal__closer js_close_modal"></div>
+      </form>
     </div>
-    <div class="mod__footer">
-      <div class="mod__buttons">
-        <div class="mod__prev mod__btn">назад</div>
-        <div class="mod__next mod__btn" onClick="ga('send', 'event', 'Knopka1', 'OformlenieZayvki1');">далее</div>
-        <button class="mod__btn mod_send" onClick="ga('send', 'event', 'Knopka3', 'OformlenieZayvki3');">отправить</button>
-      </div>
-    </div>
-    <div class="modal__closer js_close_modal"></div>
-  </form>
-</div>
+
     <!--Button call-back-->
-<div class="callback">
+    <div class="callback">
       <a class="popup_modal" href="#call_back" onClick="ga('send', 'event', 'Najatie', 'KnopkaTelefon');"></a>
     </div>
+      
+    <!-- Flying santa -->
+    <div class="santa"></div>
 
-</div><!--end wrapper-->
+</div>
+<!--end wrapper-->
 
-<script src="js/scripts.min.js?ver=2.05"></script><!--SCRIPTS MAIN-->
-<script>
-    var d = new Date();
-    var n = d.getDay();
-    if ( n <= 3) {
-        document.getElementById('time').style.display = 'none';
-        document.getElementById('cont').style.color = '#fff';
-    };
-</script>
+<!--SCRIPTS MAIN-->
+<script defer src="js/scripts.min.js?ver=2018"></script>
+
 
 <!--GOOGLE MAPS START-->
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFzsMOtDiHiOU4ESWGclNA3KPYrCTccvk&callback=initMap"></script>
 <script>function initMap(){var e={lat:32.8076469,lng:35.1044953},l=new google.maps.Map(document.getElementById("map"),{zoom:16,center:new google.maps.LatLng(32.8076469,35.1101),disableDefaultUI:!0,scrollwheel:!1,styles:[{featureType:"administrative",elementType:"labels.text.fill",stylers:[{color:"#444444"}]},{featureType:"landscape",elementType:"all",stylers:[{color:"#fff"}]},{featureType:"poi",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"all",stylers:[{saturation:-100},{lightness:45}]},{featureType:"road.highway",elementType:"all",stylers:[{visibility:"simplified"}]},{featureType:"road.arterial",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"all",stylers:[{color:"#46bcec"},{visibility:"on"}]}]});new google.maps.Marker({position:e,map:l,title:"MAX TV",icon:"img/icons/marker.png"})}</script>
 <!--GOOGLE MAPS END-->
+
 <!--START remarketing Google -->
 <script type="text/javascript">
     /* <![CDATA[ */
@@ -1224,5 +1393,6 @@
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
 <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/842804071/?guid=ON&amp;script=0"/></div></noscript>
 <!--END remarketing Google -->
+
 </body>
 </html>

@@ -6,7 +6,9 @@
 @import "plugin_libs/_magnific_popup"
 @import "modal_form"
 @import "header-sect"
+@import "garland"
 @import "benefits-sect"
+@import "new_year"
 @import "hurry-sect"
 @import "equipment-sect"
 @import "before-after-sect"
@@ -30,6 +32,95 @@
 @import "../libs/animate.css/source/fading_exits/fadeOutUp"
 @import "../libs/animate.css/source/fading_entrances/fadeInUp"
 @import "../libs/animate.css/source/attention_seekers/bounce"
+
+.santa
+  width: 251px
+  height: 246px
+  background-image: url("../img/svg_elem/santa.svg")
+  background-size: contain
+  position: fixed
+  background-repeat: no-repeat
+  animation-delay: 2s
+  animation: santa 24s infinite linear
+  z-index: 99
+  @media only screen and (max-width : 767px)
+    width: 120px
+    height: 115px
+  @media only screen and (max-width : 480px)
+    width: 100px
+    height: 95px
+
+@keyframes santa
+  0%
+    //start first center
+    right: 0
+    top: 50%
+    transform: translateX(100vw)
+  5%
+    right: 0
+    top: 50%
+    transform: translateX(0)
+  15%
+    right: 0
+    top: 50%
+    transform: translateX(0)
+  20%
+    right: 0
+    top: 50%
+    transform: translateX(100vw)
+    //end first center
+  25%
+    //start second
+    right: 0
+    top: 0
+    transform: translateX(100vw)
+  30%
+    right: 0
+    top: 0
+    transform: translateX(0) rotate(-45deg)
+  35%
+    right: 0
+    top: 0
+    transform: translateX(0) rotate(-45deg)
+  40%
+    right: 0
+    top: 0
+    transform: translateX(100vw) rotate(0)
+    //end secont top right
+  55%
+    //go to third
+    right: 50%
+    top: 100%
+    transform: translateX(0) translateY(0)
+  70%
+    //go to third
+    right: 50%
+    top: 100%
+    transform: translateX(0) translateY(0)
+  75%
+    //start third
+    right: 50%
+    top: 100%
+    transform: translateX(0) translateY(-100%)
+  80%
+    right: 50%
+    top: 100%
+    transform: translateX(0) translateY(-100%)
+  85%
+    //end third
+    right: 50%
+    top: 100%
+    transform: translateX(0) translateY(0)
+  90%
+    //end all
+    right: 100%
+    top: 0%
+    transform: translateX(0) translateY(0)
+
+
+
+
+
 
 .callback
   a
