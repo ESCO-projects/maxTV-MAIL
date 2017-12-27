@@ -1,0 +1,60 @@
+    <!--Modal unique timeline-->
+    <div class="quest clearfix">
+      <div class="quest__wrap">
+        <div class="quest__title clearfix">
+          <div class="quest__title-cont">
+            <h5>Мы помогли вам найти то, что Вы <span class="quest__yellow-col">искали</span>?</h5>
+            <p>
+              Мы на 100% уверенны в качестве нашего продукта и <br>
+              досконально знаем все его особенности.
+            </p>
+            <div class="quest__closer">
+              <div class="quest__closer-lines"></div>
+            </div>
+          </div>
+        </div>
+        <div class="quest__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="quest__text">
+                  <p>
+                    Но к сожалению, описать все на сайте нет возможности.
+                    Мы допускаем, что посетитель может остаться без всех ответов на свои вопросы...
+                  </p>
+                  <p>
+                    В таком случае, мы просим Вас, оставьте <br>
+                    свое мнение или не отвеченный <span class="quest__yellow-bg">вопрос тут</span><br>
+                    Мы обязательно перезвоним Вам и дадим все нужные ответы!
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="quest__form">
+                  <form class="js_send_form">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Лендинг MAX TV">
+                    <input type="hidden" name="admin_email" value="info@maxtv.co.il">
+                    <input type="hidden" name="form_subject" value="Всплывающее окно TimeLine">
+                    <!-- END Hidden Required Fields -->
+                    <div class="quest__inp">
+                      <span class="name_def">Ваше имя</span>
+                      <input class="quest__name" title="Введите ваше имя" type="text" name="Имя" placeholder="Ваше имя" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Телефон</span>
+                      <input class="quest__phone js_mask" title="Введите ваш телефон" type="tel" name="Телефон" placeholder="Телефон" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Ваш комментарий</span>
+                      <textarea class="js-quest" title="Ваш комметарий" name="Комментарий" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <button class="quest__btn modal_button" onClick="ga('send', 'event', 'KnopkaNaForme4', 'OtpravitZayvku4');">Отправить заявку</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

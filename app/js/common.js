@@ -1,5 +1,9 @@
 $(function() {
 
+    $('.schedule').click(function(){
+        $(this).slideToggle();    
+    });
+
     $('.par_ax').click(function () {
        $(this).slideToggle(500);
     });
@@ -107,6 +111,8 @@ $(function() {
         });
     };scrollProgressLine();
     /*END FUNCTION TO ADD PROGRESS LINE TO NAVIGATION*/
+
+    //big bank form
     $('input.js_hide_form').on( "click", function() {
         $('.js_hide_input').hide();
     });

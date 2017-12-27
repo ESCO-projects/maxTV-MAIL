@@ -3,9 +3,9 @@ $(function() {
     /*START TIMER*/
     /*set end date in countdown function and it will calculate time*/
     $('.time_go').countdown('2017/12/31 00:00:00', function(event) {
-        $('.cou_hours').html(event.strftime('%H'));
-        $('.cou_min').html(event.strftime('%M'));
-        $('.cou_sec').html(event.strftime('%S'));
+        $('.cou_hours').html(event.strftime('%D'));
+        $('.cou_min').html(event.strftime('%H'));
+        $('.cou_sec').html(event.strftime('%M'));
     });
     /*END TIMER*/
 
@@ -55,7 +55,7 @@ $(function() {
     firstTimer = setTimeout(function(){
         $('.quest').addClass('quest__scaler').css('bottom','0');
         $('body').addClass('body_stop');
-    }, 5000);
+    }, 50000);
 
     $('.quest__closer').click(function () {
         $('.quest').removeClass('quest__scaler');

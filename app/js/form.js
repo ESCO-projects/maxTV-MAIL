@@ -19,11 +19,11 @@ $(function() {
         return false;
     });
     
-    $('.quest__yellow-bg').click(function () {
+    $('.js_focus_form').click(function () {
         $('.quest').animate({
-            scrollTop: $(".js-quest").offset().top
+            scrollTop: $(".js_focus_in").offset().top
         }, 500);
-        $('.js-quest').focus();
+        $('.js_focus_in').focus();
     });
     /*END FOCUS IN FORM ON CLICK*/
 

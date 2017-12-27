@@ -6,6 +6,144 @@
   overflow: hidden!important
   z-index: 900!important
 
+@keyframes gifts
+  0%
+    background-position: 0 -100%
+  100%
+    background-position: 0 100%
+
+
+.new
+  background-image: url("../img/gift.png")
+  animation: gifts 70s infinite linear
+  display: flex
+  align-items: center
+  &__wrapp
+    width: 100%
+  &__title
+    margin-top: 100px
+    position: relative
+    height: 101px
+    background-repeat: repeat-x
+    background-position: center center
+    background-image: url("../img/green_line.png")
+    &::before
+      position: absolute
+      content: ''
+      width: 200px
+      height: 223px
+      left: 50%
+      margin-left: -100px
+      top: -80px
+      z-index: 2
+      background-image: url("../img/christmas_tree.png")
+    @media only screen and (max-width : 767px)
+      height: 0
+      &::before
+        display: none
+  &__text
+    max-width: 420px!important
+    @media only screen and (max-width : 540px)
+      padding-top: 30px
+    @media only screen and (max-width : 440px)
+      max-width: 310px!important
+      padding-top: 0
+    p
+      min-height: 168px
+      padding: 28px 20px 20px
+      margin: 0!important
+      line-height: 1.2!important
+      text-align: center
+      background-image: url("../img/rama.png")
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center center
+      color: #582a2d
+      font-size: 22px!important
+      font-family: $default-title!important
+      span
+        color: #a61721
+        font-family: $default-title!important
+      @media only screen and (max-width : 991px)
+        padding: 40px 20px 20px
+        background-size: contain
+        font-size: 18px!important
+      @media only screen and (max-width : 440px)
+        font-size: 16px!important
+        padding: 44px 20px 20px
+      @media only screen and (max-width : 340px)
+        padding: 46px 10px 20px
+        font-size: 15px!important
+    ul
+      margin: 10px 0
+      @media only screen and (max-width : 440px)
+        margin: -20px auto 20px
+    li
+      text-align: left
+      min-height: 36px
+      position: relative
+      max-width: 365px
+      min-height: 99px
+      background-image: url("../img/premium_line.png")
+      background-repeat: no-repeat
+      background-size: cover
+      font-size: 20px
+      text-transform: uppercase
+      color: #641732
+      text-align: left
+      line-height: 4.7
+      font-family: $default-font-medium
+      margin-top: -35px
+      &:nth-child(1)
+        padding-left: 36%
+      &:nth-child(2)
+        padding-left: 30%
+        right: -20px
+      &:nth-child(3)
+        padding-left: 26%
+        right: -40px
+      @media only screen and (max-width : 991px)
+        right: 0!important
+        font-size: 19px
+        line-height: 4.8
+        padding-left: 90px!important
+        background-size: contain
+      @media only screen and (max-width : 767px)
+        line-height: 5
+        padding-left: 105px!important
+        &:nth-child(1)
+        &:nth-child(2)
+          right: -20px!important
+        &:nth-child(3)
+          right: -40px!important
+      @media only screen and (max-width : 440px)
+        width: 300px
+        line-height: 4.8
+        margin: 0 auto -40px
+        padding-left: 85px!important
+        font-size: 16px
+        &:nth-child(2)
+          right: 0!important
+        &:nth-child(3)
+          right: 0!important
+    >div
+      color: #fff
+      font-size: 24px
+      font-family: $default-title
+      max-width: 340px
+      margin: 0 auto 20px
+      background-image: linear-gradient(to right, rgba(175, 0, 15, 0),rgba(175, 0, 15, 1))
+      padding: 20px
+      border-radius: 50px
+      text-align: center
+      @media only screen and (max-width : 767px)
+        font-size: 20px
+        padding: 10px
+  &__button
+    transition: all 0.2s ease!important
+    background-color: #a92223!important
+
+
 .quest
   position: fixed
   bottom: 0
@@ -14,64 +152,74 @@
   overflow-x: hidden
   width: 100vw
   max-width: 100%
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.9)
   z-index: 99999
   color: #fff
   transition: all 0.5s ease
   transform: scale(0)
   visibility: hidden
-  &::after
-    position: absolute
-    content: ''
-    bottom: 0
-    left: 30%
-    width: 187px
-    height: 351px
-    background-image: url(../img/quest_men.png)
+  //!!!uncomment for old modal men img
+  //&::after
+  //  position: absolute
+  //  content: ''
+  //  bottom: 0
+  //  left: 30%
+  //  width: 187px
+  //  height: 351px
+  //  background-image: url(../img/quest_men.png)
   &__wrapp
     min-height: 100%
-  &__title
-    margin-top: 125px
-    min-height: 130px
-    background: #f05f57 linear-gradient(to left, #360940, #f05f57)
-    text-align: center
-    h5
-      font-size: 24px
-      font-family: $default-font-bold
-      margin: 0 0 5px
-      br
-        display: none
-    p
-      margin: 0
-      font-size: 16px
-      line-height: 1.5
-      font-family: $default-font-light
-  &__title-cont
-    height: 100%
-    padding: 15px 15px 30px
-    background-size: contain
-    background: url(../img/pattern_tv.png) repeat
     position: relative
-    &::after
-      position: absolute
-      content: ''
-      left: calc(50% - 15px)
-      bottom: -15px
-      width: 32px
-      height: 31px
-      background-size: 21px 19px
-      border-radius: 50%
-      background: rgba(0, 0, 0, 0.5) url(../img/icons/world_ico.png) no-repeat 50% 50%
+    z-index: 10
+  &__title
+    //min-height: 130px
+    //uncomment for old
+    //background: #f05f57 linear-gradient(to left, #360940, #f05f57)
+    //text-align: center
+    //h5
+    //  font-size: 24px
+    //  font-family: $default-font-bold
+    //  margin: 0 0 5px
+    //  br
+    //    display: none
+    //p
+    //  margin: 0
+    //  font-size: 16px
+    //  line-height: 1.5
+    //  font-family: $default-font-light
+  &__title-cont
+    //height: 100%
+    //padding: 15px 15px 30px
+    //background-size: contain
+    //background: url(../img/pattern_tv.png) repeat
+    //position: relative
+    //uncomment for old
+    //&::after
+    //  position: absolute
+    //  content: ''
+    //  left: calc(50% - 15px)
+    //  bottom: -15px
+    //  width: 32px
+    //  height: 31px
+    //  background-size: 21px 19px
+    //  border-radius: 50%
+    //  background: rgba(0, 0, 0, 0.5) url(../img/icons/world_ico.png) no-repeat 50% 50%
   &__closer
     border: 2px solid rgba(255, 255, 255, 0.2)
     border-radius: 50%
     position: absolute
-    left: calc(50% - 26px)
+    left: 50%
+    margin-left: 200px
     top: -74px
     width: 52px
     height: 52px
     cursor: pointer
     transition: all 0.4s ease
+    background-color: #fff
+    @media only screen and (max-width : 767px)
+      top: 0
+    @media only screen and (max-width : 540px)
+      margin-left: -26px
     &:hover
       background-color: #fff
       transform: rotate(180deg)
@@ -91,7 +239,7 @@
         top: 0
         width: 100%
         height: 1px
-        background-color: #fff
+        background-color: #000
         transition: all 0.3s ease
       &::before
         transform: rotate(-45deg)
@@ -100,14 +248,15 @@
   &__content
     padding-top: 30px
   &__text
-    max-width: 345px
+    //max-width: 345px
     float: right
-    p
-      margin: 0 0 20px
-      font-size: 16px
-      line-height: 20px
-      font-family: $default-font-light
+    //p
+    //  margin: 0 0 20px
+    //  font-size: 16px
+    //  line-height: 20px
+    //  font-family: $default-font-light
   &__form
+    margin-top: 10%
     width: 260px
     float: left
     input,textarea,button

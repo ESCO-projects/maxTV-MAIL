@@ -1,0 +1,72 @@
+<!--Modal unique timeline-->
+    <div class="quest clearfix new">
+      <div class="quest__wrap new__wrapp">
+        <div class="quest__title clearfix">
+          <div class="quest__title-cont new__title">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="new__img__layer">
+                    <img src="img/new_year.png">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="new__img__text">
+                    <img src="img/new_text.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="quest__closer">
+              <div class="quest__closer-lines"></div>
+            </div>
+          </div>
+        </div>
+        <div class="quest__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="quest__text new__text">
+                  <p>
+                    Покупай одну приставку <br>
+                    за 99₪, две приставки за 169₪ <br>
+                    и получи <span>премиум пакеты</span>:
+                  </p>
+                  <ul>
+                    <li>спорт</li>
+                    <li>фильмы</li>
+                    <li>каналы для взрослых</li>
+                  </ul>
+                  <span>Совершенно бесплатно!</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="quest__form">
+                  <form class="js_send_form">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Лендинг MAX TV">
+                    <input type="hidden" name="admin_email" value="info@maxtv.co.il">
+                    <input type="hidden" name="form_subject" value="Новогоднее Всплывающее окно TimeLine">
+                    <!-- END Hidden Required Fields -->
+                    <div class="quest__inp">
+                      <span class="name_def">Ваше имя</span>
+                      <input class="quest__name" title="Введите ваше имя" type="text" name="Имя" placeholder="Ваше имя" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Телефон</span>
+                      <input class="quest__phone js_mask" title="Введите ваш телефон" type="tel" name="Телефон" placeholder="Телефон" required autocomplete="off">
+                    </div>
+                    <div class="quest__inp">
+                      <span class="name_def">Ваш комментарий</span>
+                      <textarea class="js-quest" title="Ваш комметарий" name="Комментарий" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <button class="quest__btn red_button new__button" onClick="ga('send', 'event', 'KnopkaNaForme4', 'OtpravitZayvku4');">Отправить заявку</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

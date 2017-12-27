@@ -53,7 +53,7 @@
 
 
   <!--STYLES MAIN START-->
-  <link rel="stylesheet" href="css/main.min.css?ver=2018.01">
+  <link rel="stylesheet" href="css/main.min.css?ver=2018.06">
   <!--STYLES MAIN END-->
 
   <!--START GOOGLE OPTIMIZE-->
@@ -110,6 +110,20 @@
 </head>
 <body>
 <div class="main-all-wrapper md_wrap">
+    
+    <!-- start schedule graph -->
+    <div class="schedule">
+      <p>
+        Уважаемые клиенты и гости нашего сайта. 
+        В связи с праздниками, компания не будет 
+        работать с 30.12.2017 по 02.01.2018. 
+      </p>
+      <p>
+        Мы искренне поздравляем Вас
+        с Новым Годом!
+      </p>
+    </div>
+    <!-- end schedule graph -->
 
     <!-- if ie show block -->
     <div class="warning_ie8">
@@ -269,6 +283,7 @@
           <!--<a href="#comments">Отзывы</a>--><a href="#contacts">Контакты</a>
         </nav>
       </div>
+
       <div class="head__cont-wrapper">
         
         <!-- new year garland -->
@@ -495,9 +510,9 @@
                   <img src="img/tv.png" alt="tv">
                 </div>
                 <ul class="time_type">
-                  <li class="time_days dib">Часов</li>
-                  <li class="time_hours dib">Минут</li>
-                  <li class="time_minuts dib">Секунд</li>
+                  <li class="time_days dib">Дней</li>
+                  <li class="time_hours dib">Часов</li>
+                  <li class="time_minuts dib">Минут</li>
                 </ul>
               </div>
             </div>
@@ -524,21 +539,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <!-- start plans -->
             <div class="plans">
+            
+              <div class="plans__plus">
+                <p>
+                  <span>Премиум пакеты:</span> спорт
+                  фильмы, каналы для взрослых
+                  <span>соверешенно бесплатно</span>
+                </p>
+              </div>
+
+
+              <!-- plans title -->
               <h4>&laquo;Родной&raquo;</h4>
+
               <div class="plans__item plans__box">
                 <div class="plans__to-box"></div>
+
                 <ul class="plans__box__list">
-                  <li>Архив каналов 10 дней <span>—</span>
-                  </li>
-                  <li><span class="num_it">1</span> приставка = <span class="red">129</span> &#8362;/мес</li>
-                  <li><span class="num_it">2</span> приставки = <span class="red">199</span> &#8362;/мес</li>
+                  <li>Архив каналов 10 дней <span>—</span></li>
+                  <li><span class="num_it">1</span> приставка = <span class="red">99</span> &#8362;/мес</li>
+                  <li><span class="num_it">2</span> приставки = <span class="red">169</span> &#8362;/мес</li>
                   <li><span class="num_it">3</span> приставки = <span class="red">249</span> &#8362;/мес</li>
                 </ul>
+
                 <div class="plans__credit">Нет кредитной карты?
                   <br><span class="kr_red">не проблема</span>
                   <br><span class="cr_last">работаем без нее</span>
                 </div>
+
               </div>
               <div class="plans__item plans__center">
                 <div class="plans__circle">Более
@@ -566,6 +596,7 @@
               <div class="plans__box-img"></div>
               <a href="#unique_form" class="pac_btn red_button popup_modal js_value" data-form="Выбрать пакет" onClick="ga('send', 'event', 'Knopka3', 'VibratPaket');">Выбрать пакет</a>
             </div>
+            <!-- end plans -->
           </div>
         </div>
       </div>
@@ -873,9 +904,9 @@
                       <div class="shadow"></div>
                     </div>
                     <ul class="time_type">
-                      <li class="time_days dib">Часов</li>
-                      <li class="time_hours dib">Минут</li>
-                      <li class="time_minuts dib">Секунд</li>
+                      <li class="time_days dib">Дней</li>
+                      <li class="time_hours dib">Часов</li>
+                      <li class="time_minuts dib">Минут</li>
                     </ul>
                   </div>
                 </div>
@@ -883,8 +914,8 @@
               <div class="time__text">
                 <h6>
                   Новый год не за горами!<br>
-                  Покупай одну приставку за 99, две приставки за 169 и получи премиум пакеты спорт, фильмы, 
-                  каналы для взрослых, совершенно бесплатно.<br>
+                  Покупай одну приставку за 99 в месяц, две приставки за 169 в месяц<br> и получи премиум пакеты спорт, фильмы, 
+                  каналы для взрослых, совершенно бесплатно.
                   Акция скоро закончится поспеши!
                 </h6>
                 <!--<p>
@@ -1165,35 +1196,36 @@
       <div class="modal__closer close_tech js_close_modal"></div>
     </div>
 
+
     <!--Modal unique timeline-->
-    <div class="quest clearfix">
-      <div class="quest__wrap">
-        <div class="quest__title clearfix">
-          <div class="quest__title-cont">
-            <h5>Мы помогли вам найти то, что Вы <span class="quest__yellow-col">искали</span>?</h5>
-            <p>
-              Мы на 100% уверенны в качестве нашего продукта и <br>
-              досконально знаем все его особенности.
-            </p>
+    <div class="quest clearfix new">
+      <div class="quest__wrap new__wrapp">
+
+        <div class="quest__title new__title">
+
+            <!-- btn close modal -->
             <div class="quest__closer">
               <div class="quest__closer-lines"></div>
             </div>
-          </div>
+
         </div>
         <div class="quest__content">
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <div class="quest__text">
+                <div class="quest__text new__text js_focus_form">
                   <p>
-                    Но к сожалению, описать все на сайте нет возможности.
-                    Мы допускаем, что посетитель может остаться без всех ответов на свои вопросы...
+                    Покупай <br>
+                    одну приставку за 99₪ в месяц,<br>
+                    две приставки за 169₪ в месяц<br>
+                    <span>и получи премиум пакеты:</span>
                   </p>
-                  <p>
-                    В таком случае, мы просим Вас, оставьте <br>
-                    свое мнение или не отвеченный <span class="quest__yellow-bg">вопрос тут</span><br>
-                    Мы обязательно перезвоним Вам и дадим все нужные ответы!
-                  </p>
+                  <ul>
+                    <li>спорт</li>
+                    <li>фильмы</li>
+                    <li>каналы для взрослых</li>
+                  </ul>
+                  <div>Совершенно бесплатно!</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -1202,11 +1234,11 @@
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="Лендинг MAX TV">
                     <input type="hidden" name="admin_email" value="info@maxtv.co.il">
-                    <input type="hidden" name="form_subject" value="Всплывающее окно TimeLine">
+                    <input type="hidden" name="form_subject" value="Новогоднее Всплывающее окно TimeLine">
                     <!-- END Hidden Required Fields -->
                     <div class="quest__inp">
                       <span class="name_def">Ваше имя</span>
-                      <input class="quest__name" title="Введите ваше имя" type="text" name="Имя" placeholder="Ваше имя" required autocomplete="off">
+                      <input class="quest__name js_focus_in" title="Введите ваше имя" type="text" name="Имя" placeholder="Ваше имя" required autocomplete="off">
                     </div>
                     <div class="quest__inp">
                       <span class="name_def">Телефон</span>
@@ -1216,7 +1248,7 @@
                       <span class="name_def">Ваш комментарий</span>
                       <textarea class="js-quest" title="Ваш комметарий" name="Комментарий" placeholder="Ваш комментарий"></textarea>
                     </div>
-                    <button class="quest__btn modal_button" onClick="ga('send', 'event', 'KnopkaNaForme4', 'OtpravitZayvku4');">Отправить заявку</button>
+                    <button class="quest__btn red_button new__button" onClick="ga('send', 'event', 'KnopkaNaForme4', 'OtpravitZayvku4');">Отправить заявку</button>
                   </form>
                 </div>
               </div>
@@ -1225,6 +1257,7 @@
         </div>
       </div>
     </div>
+
 
     <!--Modal bank-->
     <div id="mod_pay" class="mod zoom-anim-dialog mfp-hide">
@@ -1374,7 +1407,7 @@
 <!--end wrapper-->
 
 <!--SCRIPTS MAIN-->
-<script defer src="js/scripts.min.js?ver=2018"></script>
+<script defer src="js/scripts.min.js?ver=2018.05"></script>
 
 
 <!--GOOGLE MAPS START-->
